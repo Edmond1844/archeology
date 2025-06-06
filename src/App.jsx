@@ -1,12 +1,11 @@
-import './App.css'
+// import './App.css'
 
-function App() {
+// function App() {
 
-  return (
-    <>
-      <h1>привет</h1>
-    </>
-  )
-}
+//   return (
+//     <>
+//     </>
+//   )
+// }
 
-export default App
+// export default App
