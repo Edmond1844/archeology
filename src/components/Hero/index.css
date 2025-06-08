@@ -1,0 +1,56 @@
+.hero {
+    background-image: url('/src/images/hero.png');
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: overlay;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 940px;
+}
+
+.hero__content {
+    padding: 138px 20px;
+
+    text-align: center;
+}
+
+.hero__content-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+
+    margin-bottom: 24px;
+}
+
+.hero__content-item:not(:last-child)::after {
+    content: "";
+    height: 3px;
+
+    margin-left: 15px;
+
+    border: 1px solid #fff;
+}
+
+.hero__content-link {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+
+    line-height: 30px;
+
+    color: #fff;
+}
+
+.hero__content-title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 200px;
+
+    line-height: 200px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+}
+
