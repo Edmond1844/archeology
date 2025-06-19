@@ -22,11 +22,25 @@ a {
 }
 
 button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+
   cursor: pointer;
+}
+
+.container {
+  width: 1280px;
+
+  margin: 0 auto;
 }
 
 .via-antiqua-banner {
     width: 253px;
+}
+
+.via {
+    color: tomato;
 }
 
 .via-antiqua-title {

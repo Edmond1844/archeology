@@ -1,13 +1,9 @@
 .footer {
     background-color: rgba(34, 34, 34, 1);
-
-    padding: 80px 226px;
 }
 
-.footer__container {
-    width: 1510px;
-
-    margin: 0 auto;
+.footer__wrapper {
+    padding: 80px 226px;
 }
 
 .footer__banner {
@@ -54,6 +50,8 @@
     font-weight: 300;
     font-size: 16px;
 
+    color: #fff;
+
     line-height: 100%;
 }
 
@@ -61,8 +59,6 @@
     display: flex;
     column-gap: 12px;
 }
-
-
 
 .footer__copyright-item:not(:last-child)::after {
     content: "";
