@@ -15,7 +15,7 @@
     text-align: center;
 }
 
-.hero__content-list {
+.hero__content_list {
     display: flex;
     justify-content: center;
     column-gap: 15px;
@@ -23,7 +23,7 @@
     margin-bottom: 24px;
 }
 
-.hero__content-item:not(:last-child)::after {
+.hero__content_item:not(:last-child)::after {
     content: "";
     height: 3px;
 
@@ -32,7 +32,7 @@
     border: 1px solid #fff;
 }
 
-.hero__content-link {
+.hero__content_link {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -42,7 +42,7 @@
     color: #fff;
 }
 
-.hero__content-title {
+.hero__content_title {
     font-family: "Oswald", sans-serif;
     font-weight: 700;
     font-size: 200px;

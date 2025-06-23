@@ -1,3 +1,8 @@
 .section_tours__wrapper {
     display: flex;
 }
+
+.section_tour__wrapper {
+background-color: tomato;
+margin-bottom: 25px;
+}

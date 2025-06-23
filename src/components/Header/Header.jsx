@@ -2,7 +2,7 @@ import styles from './Header.module.css';
 
 function Header() {
     return (
-        <header className={`${styles.header} container}`}>
+        <header className={`${styles.header} container`}>
             <div className={`${styles.header__banner} via-antiqua-banner`}>
                 <h2 className={`${styles.header__title} via-antiqua-title`}>Via Antiqua</h2>
                 <h1 className={`${styles.header__subtitle} via-antiqua-subtitle`}>Археологические маршруты по всему миру</h1>

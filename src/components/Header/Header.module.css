@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     
-    column-gap: 195px;
+    column-gap: 130px;
 
     align-items: center;
 
@@ -13,10 +13,11 @@
 }
 
 .header__subtitle{
-}
+} */
 
 .header__nav {
-} */
+    width: 562px;
+}
 
 .header__nav_list {
     display: flex;
@@ -34,6 +35,8 @@
 } */
 
 .header__button {
+    width: 236px;
+
     line-height: 30px;
 
     padding: 10px 20px;

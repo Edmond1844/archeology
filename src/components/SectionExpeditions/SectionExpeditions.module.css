@@ -1,0 +1,42 @@
+.section_expeditions__container {
+    padding: 80px 200px;
+}
+
+.section_expeditions__title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+
+    line-height: 50px;
+
+    margin-bottom: 64px;
+
+    color: #222222;
+}
+
+.section_expeditions__list {
+    width: 758px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    column-gap: 16px;
+    row-gap: 10px;
+}
+
+/* .section_expeditions__item {
+
+} */
+
+.section_expeditions__button {
+    border: none;
+    border-radius: 10px;
+
+    padding: 12px 20px;
+
+    background-color: #f6f6f6;
+}
+
+.section_expeditions__button_activeButton {
+    background-color: #7d7d7d;
+}
