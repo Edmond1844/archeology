@@ -1,0 +1,23 @@
+.book_button {
+    padding: 16px 25px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #4997d3;
+    color: #ffffff;
+
+    margin-right: 14px;
+}
+
+.details_button {
+    padding: 16px 23px;
+
+    border: 1px solid #4997d3;
+    border-radius: 10px;
+
+    background-color: #ffffff;
+    color: #4997d3;
+
+    line-height: 30px;
+}

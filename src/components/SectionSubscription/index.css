@@ -35,18 +35,11 @@
 }
 
 .section-subscription__input {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-
     line-height: 30px;
 
     color: #999;
 
     width: 551px;
-
-    border: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 
     padding: 25px 23px;
 
