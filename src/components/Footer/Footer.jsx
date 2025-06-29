@@ -1,53 +1,53 @@
-import './index.css';
+import BrandingText from '../BrandingText/BrandingText.jsx';
+import styels from './Footer.module.css';
 
 function Footer() {
     return(
-        <footer className="footer">
-            <div className='footer__wrapper container'>
-                <div className="footer__content">
-                    <div className="footer__banner via-antiqua-banner">
-                        <h2 className="footer__title via-antiqua-title">Via Antiqua</h2>
-                        <h2 className="footer__subtitle via-antiqua-subtitle">Археологические маршруты по всему миру</h2>
+        <footer className={styels.footer}>
+            <div className={`${styels.footer__wrapper} container}`}>
+                <div className={styels.footer__content}>
+                    <div className={styels.footer__banner}>
+                        <BrandingText />
                     </div>
-                    <ul className='footer__list'>
-                        <li className='footer__item'>
-                            <a className='footer__link links-list' href="#">Направления</a>
+                    <ul className={styels.footer__list}>
+                        <li className={styels.footer__item}>
+                            <a className={`${styels.footer__link} links-list`} href="#">Направления</a>
                         </li>
-                        <li className='footer__item'>
-                            <a className='footer__link links-list' href="#">Экспедиции</a>
+                        <li className={styels.footer__item}>
+                            <a className={`${styels.footer__link} links-list`} href="#">Экспедиции</a>
                         </li>
-                        <li className='footer__item'>
-                            <a className='footer__link links-list' href="#">О нас</a>
+                        <li className={styels.footer__item}>
+                            <a className={`${styels.footer__link} links-list`} href="#">О нас</a>
                         </li>
-                        <li className='footer__item'>
-                            <a className='footer__link links-list' href="#">Блог</a>
+                        <li className={styels.footer__item}>
+                            <a className={`${styels.footer__link} links-list`} href="#">Блог</a>
                         </li>
-                        <li className='footer__item'>
-                            <a className='footer__link links-list' href="#">Контакты</a>
+                        <li className={styels.footer__item}>
+                            <a className={`${styels.footer__link} links-list`} href="#">Контакты</a>
                         </li>
                     </ul>
-                    <ul className="footer__icons-list">
-                        <li className="footer__icon">
-                            <a className="footer__icon-link" href="#">
-                                <img className="footer__icon-img" src="images/facebook.svg" alt="facebook" />
+                    <ul className={styels.footer__icons_list}>
+                        <li className={styels.footer__icon}>
+                            <a className={styels.footer__icon_link} href="#">
+                                <img className={styels.footer__icon_img} src="images/facebook.svg" alt="facebook" />
                             </a>
                         </li>
-                        <li className="footer__icon">
-                            <a className="footer__icon-link" href="#">
-                                <img className="footer__icon-img" src="images/facebook.svg" alt="twitter" />
+                        <li className={styels.footer__icon}>
+                            <a className={styels.footer__icon_link} href="#">
+                                <img className={styels.styelsfooter__icon_img} src="images/facebook.svg" alt="twitter" />
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div className="footer__border-line"></div>
-                <div className="footer__copyright">
-                    <p className="footer__copyright-text">Copyright © 2025. Все права защищены.</p>
-                    <ul className='footer__copyright-list'>
-                        <li className='footer__copyright-item'>
-                            <a className="footer__copyright-link" href='#'>Политика конфиденциальности</a>
+                <div className={styels.footer__border_line}></div>
+                <div className={styels.footer__copyright}>
+                    <p className={styels.footer__copyright_text}>Copyright © 2025. Все права защищены.</p>
+                    <ul className={styels.footer__copyright_list}>
+                        <li className={styels.footer__copyright_item}>
+                            <a className={styels.footer__copyright_link} href='#'>Политика конфиденциальности</a>
                         </li>
-                        <li className="footer__copyright-item"> 
-                            <a className="footer__copyright-link" href='#'> Правила и условия</a>
+                        <li className={styels.footer__copyright_item}> 
+                            <a className={styels.footer__copyright_link} href='#'> Правила и условия</a>
                         </li>
                     </ul>
                 </div>
@@ -56,4 +56,4 @@ function Footer() {
     )   
 }
 
-export default Footer
+export default Footer;

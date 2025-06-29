@@ -1,11 +1,11 @@
 import styles from './Header.module.css';
+import BrandingText from '../BrandingText/BrandingText.jsx';
 
 function Header() {
     return (
         <header className={`${styles.header} container`}>
             <div className={`${styles.header__banner} via-antiqua-banner`}>
-                <h2 className={`${styles.header__title} via-antiqua-title`}>Via Antiqua</h2>
-                <h1 className={`${styles.header__subtitle} via-antiqua-subtitle`}>Археологические маршруты по всему миру</h1>
+                <BrandingText />
             </div>
             <nav className={styles.header__nav}>
                 <ul className={styles.header__nav_list}>

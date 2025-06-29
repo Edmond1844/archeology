@@ -25,13 +25,13 @@
     margin-right: 321px;
 }
 
-.footer__icons-list {
+.footer__icons_list {
     display: flex;
     flex-wrap: wrap;
     column-gap: 20px;
 }
 
-.footer__border-line {
+.footer__border_line {
     border-bottom: 1px solid rgba(255, 255, 255, 1);
 
     margin-bottom: 16px;
@@ -45,7 +45,7 @@
     color: rgba(255, 255, 255, 1);
 }
 
-.footer__copyright-link {
+.footer__copyright_link {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 16px;
@@ -55,12 +55,12 @@
     line-height: 100%;
 }
 
-.footer__copyright-list {
+.footer__copyright_list {
     display: flex;
     column-gap: 12px;
 }
 
-.footer__copyright-item:not(:last-child)::after {
+.footer__copyright_item:not(:last-child)::after {
     content: "";
     height: 3px;
 
