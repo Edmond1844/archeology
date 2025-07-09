@@ -1,0 +1,44 @@
+.main_intro__content {
+    padding: 138px 0 20px;
+
+    text-align: center;
+}
+
+.main_intro__content_list {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+
+    margin-bottom: 24px;
+}
+
+.main_intro__content_item:not(:last-child)::after {
+    content: "";
+    height: 3px;
+
+    margin-left: 15px;
+
+    border: 1px solid #fff;
+}
+
+.main_intro__content_link {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+
+    line-height: 30px;
+
+    color: #fff;
+}
+
+
+.main_intro__content_title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 200px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+}
+

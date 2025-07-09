@@ -1,0 +1,24 @@
+.contacts {
+    background: #2d3929;
+    min-width: 360px;
+}
+
+.contacts__content {
+    padding: 50px 20px;
+}
+
+.contacts__link {
+    display: inline-block;
+    margin-bottom: 25px;
+    margin-left: 3px;
+}
+
+.contacts__title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+
+    color: #fff;
+
+    text-transform: uppercase;
+}

@@ -1,29 +1,31 @@
 import BrandingText from '../BrandingText/BrandingText.jsx';
 import styels from './Footer.module.css';
 
+import { Link } from 'react-router-dom';
+
 function Footer() {
     return(
         <footer className={styels.footer}>
-            <div className={`${styels.footer__wrapper} container}`}>
+            <div className={`${styels.footer__wrapper} container`}>
                 <div className={styels.footer__content}>
                     <div className={styels.footer__banner}>
                         <BrandingText />
                     </div>
                     <ul className={styels.footer__list}>
                         <li className={styels.footer__item}>
-                            <a className={`${styels.footer__link} links-list`} href="#">Направления</a>
+                            <Link className={`${styels.footer__link} links-list`} href="#">Направления</Link>
                         </li>
                         <li className={styels.footer__item}>
-                            <a className={`${styels.footer__link} links-list`} href="#">Экспедиции</a>
+                            <Link className={`${styels.footer__link} links-list`} to='/expeditions'>Экспедиции</Link>
                         </li>
                         <li className={styels.footer__item}>
-                            <a className={`${styels.footer__link} links-list`} href="#">О нас</a>
+                            <Link className={`${styels.footer__link} links-list`} href="#">О нас</Link>
                         </li>
                         <li className={styels.footer__item}>
-                            <a className={`${styels.footer__link} links-list`} href="#">Блог</a>
+                            <Link className={`${styels.footer__link} links-list`} href="#">Блог</Link>
                         </li>
                         <li className={styels.footer__item}>
-                            <a className={`${styels.footer__link} links-list`} href="#">Контакты</a>
+                            <Link className={`${styels.footer__link} links-list`} to='/contact'>Контакты</Link>
                         </li>
                     </ul>
                     <ul className={styels.footer__icons_list}>
@@ -44,10 +46,10 @@ function Footer() {
                     <p className={styels.footer__copyright_text}>Copyright © 2025. Все права защищены.</p>
                     <ul className={styels.footer__copyright_list}>
                         <li className={styels.footer__copyright_item}>
-                            <a className={styels.footer__copyright_link} href='#'>Политика конфиденциальности</a>
+                            <Link className={styels.footer__copyright_link} href='#'>Политика конфиденциальности</Link>
                         </li>
                         <li className={styels.footer__copyright_item}> 
-                            <a className={styels.footer__copyright_link} href='#'> Правила и условия</a>
+                            <Link className={styels.footer__copyright_link} href='#'> Правила и условия</Link>
                         </li>
                     </ul>
                 </div>

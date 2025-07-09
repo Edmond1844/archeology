@@ -1,25 +1,20 @@
-import Hero from './components/Hero/Hero.jsx';
-import SectionExpeditions from './components/SectionExpeditions/SectionExpeditions.jsx';    
-import SectionQuestions from './components/SectionQuestions/SectionQuestions.jsx';
-import SectionSubscription from './components/SectionSubscription/SectionSubscription.jsx';
-import Footer from './components/Footer/Footer.jsx';
-
-import filterButtons from './data/filterButtons.js';
-import archeologyTours from './data/tours.js';
-import questions from './data/questions.js';
+import { Routes, Route } from 'react-router-dom';
+import Contact from './pages/Contact/Contact.jsx';
+import Home from './pages/Home/Home.jsx';
+import Expeditions from './pages/Expeditions/Expeditions.jsx';
 
 function App() {
     return (
         <>
-            <Hero />
-            <main>
-                <SectionExpeditions bottonList={filterButtons} tours={archeologyTours}/>
-                <SectionQuestions questions={questions}/>
-                <SectionSubscription />
-            </main>
-            <Footer />
+            {/* <Home /> */}
+            <Routes>
+                <Route path="/home" element={<Home />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/expeditions" element={<Expeditions />} />
+            </Routes>
         </>
     )
+    
 }
 
 export default App; 

@@ -1,5 +1,6 @@
 import styles from './Header.module.css';
 import BrandingText from '../BrandingText/BrandingText.jsx';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
     return (
@@ -10,19 +11,19 @@ function Header() {
             <nav className={styles.header__nav}>
                 <ul className={styles.header__nav_list}>
                     <li className={styles.header__nav_item}>
-                        <a className={`${styles.header__nav_link} links-list`} href="#">Направления</a>
+                        <NavLink className={`${styles.header__nav_link} links-list`} href="#">Направления</NavLink>
                     </li>
                     <li className={styles.header__nav_item}>
-                        <a className={`${styles.header__nav_link} links-list`} href="#">Экспедиции</a>
+                        <NavLink className={`${styles.header__nav_link} links-list`} to='/expeditions'>Экспедиции</NavLink>
                     </li>
                     <li className={styles.header__nav_item}>
-                        <a className={`${styles.header__nav_link} links-list`} href="#">О нас</a>
+                        <NavLink className={`${styles.header__nav_link} links-list`} href="#">О нас</NavLink>
                     </li>
                     <li className={styles.header__nav_item}>
-                        <a className={`${styles.header__nav_link} links-list`} href="#">Блог</a>
+                        <NavLink className={`${styles.header__nav_link} links-list`} href="#">Блог</NavLink>
                     </li>
                     <li className={styles.header__nav_item}>
-                        <a className={`${styles.header__nav_link} links-list`} href="#">Контакты</a>
+                        <NavLink className={`${styles.header__nav_link} links-list`} to='/contact'>Контакты</NavLink>
                     </li>
                 </ul>
             </nav>  

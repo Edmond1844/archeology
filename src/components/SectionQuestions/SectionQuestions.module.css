@@ -1,9 +1,10 @@
 .section_questions {
-    padding: 150px 20px;
+    width: 100%;
     background-color: rgba(246, 246, 246, 1);
 }
 
 .section_questions__content {
+    padding: 150px 20px;
     text-align: center;
 }
 
@@ -46,7 +47,6 @@
 
     background-color: #ffffff;
 
-    /* margin: 0 auto; */
     margin-bottom: 30px;
     padding: 36px 110px 29px 36px;
 
