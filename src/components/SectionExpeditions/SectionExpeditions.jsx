@@ -1,6 +1,8 @@
 import styles from './SectionExpeditions.module.css';
 import ButtonsActions from '../ButtonsActions/ButtonsActions.jsx';
 
+import { Link } from 'react-router-dom';
+
 function SectionExpeditions({bottonList, tours}) {
     return (
         <section className={`${styles.section_expeditions} container`}>
@@ -28,7 +30,7 @@ function SectionExpeditions({bottonList, tours}) {
                             <img className={styles.section_expeditions__tour_img} width={358} height={206} src={tourItem.img} alt={tourItem.title}/>
                             <div className={styles.section_expeditions__tour_information}>
                                 <p className={styles.section_expeditions__tour_country}>{tourItem.country}</p>
-                                <h3 className={styles.section_expeditions__tour_title}>{tourItem.title}</h3>
+                                <Link className={styles.section_expeditions__tour_title} to={`/expeditions/${tourItem.slug}`}>{tourItem.title}</Link>
                                 <p className={styles.section_expeditions__tour_description}>{tourItem.description}</p>
                             </div>
                             <div className={styles.section_expeditions__tariff_wrapper}>

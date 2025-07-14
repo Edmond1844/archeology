@@ -1,5 +1,6 @@
 import styles from './Tour.module.css';
 import Tariffs from '../Tariffs/Tariffs.jsx';
+
 function Tour({country, title, description}) {
     return (
         <>

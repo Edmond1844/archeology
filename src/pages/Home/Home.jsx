@@ -1,4 +1,3 @@
-
 import Hero from '../../components/Hero/Hero.jsx';
 import SectionExpeditions from '../../components/SectionExpeditions/SectionExpeditions.jsx';    
 import SectionQuestions from '../../components/SectionQuestions/SectionQuestions.jsx';

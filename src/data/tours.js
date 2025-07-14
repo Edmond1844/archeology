@@ -1,6 +1,7 @@
 const archeologyTours = [
     {
         id: 'peru',
+        slug: 'peru',
         img: './src/images/tours/peru.png',
         country: 'Перу',
         title: 'Уанчако и север Перу',
@@ -10,6 +11,7 @@ const archeologyTours = [
     },
     {
         id: 'greece',
+        slug: 'greece',
         img: './src/images/tours/greece.png',
         country: 'Греция',
         title: 'Эхо Афин: по следам философов и богов',
@@ -19,6 +21,7 @@ const archeologyTours = [
     },
     {
         id: 'iraq',
+        slug: 'iraq',
         country: 'Ирак',
         img: './src/images/tours/iraq.png',
         title: 'Под песками Месопотамии',

@@ -1,20 +1,19 @@
 import { Routes, Route } from 'react-router-dom';
-import Contact from './pages/Contact/Contact.jsx';
 import Home from './pages/Home/Home.jsx';
-import Expeditions from './pages/Expeditions/Expeditions.jsx';
-
+import Directions from './pages/Directions/Directions.jsx';
+import Contact from './pages/Contact/Contact.jsx';
+import ExpeditionPage from './pages/ExpeditionPage/ExpeditionPage.jsx';
 function App() {
     return (
         <>
-            {/* <Home /> */}
             <Routes>
-                <Route path="/home" element={<Home />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/directions" element={<Directions />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/expeditions" element={<Expeditions />} />
+                <Route path="/expeditions/:slug" element={<ExpeditionPage />} />
             </Routes>
         </>
     )
-    
 }
 
 export default App; 

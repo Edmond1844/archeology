@@ -11,10 +11,10 @@ function Header() {
             <nav className={styles.header__nav}>
                 <ul className={styles.header__nav_list}>
                     <li className={styles.header__nav_item}>
-                        <NavLink className={`${styles.header__nav_link} links-list`} href="#">Направления</NavLink>
+                        <NavLink className={`${styles.header__nav_link} links-list`} to='/directions'>Направления</NavLink>
                     </li>
                     <li className={styles.header__nav_item}>
-                        <NavLink className={`${styles.header__nav_link} links-list`} to='/expeditions'>Экспедиции</NavLink>
+                        <NavLink className={`${styles.header__nav_link} links-list`} to='/'>Экспедиции</NavLink>
                     </li>
                     <li className={styles.header__nav_item}>
                         <NavLink className={`${styles.header__nav_link} links-list`} href="#">О нас</NavLink>
