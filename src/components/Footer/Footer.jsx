@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Footer() {
     return(
         <footer className={styels.footer}>
-            <div className={`${styels.footer__wrapper} container`}>
+            <div className={styels.footer__wrapper}>
                 <div className={styels.footer__content}>
                     <div className={styels.footer__banner}>
                         <BrandingText />

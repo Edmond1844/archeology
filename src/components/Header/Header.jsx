@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 function Header() {
     return (
-        <header className={`${styles.header} container`}>
+        <header className={styles.header}>
             <div className={`${styles.header__banner} via-antiqua-banner`}>
                 <BrandingText />
             </div>

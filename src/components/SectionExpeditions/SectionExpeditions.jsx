@@ -19,15 +19,13 @@ function SectionExpeditions({bottonList, tours}) {
                         }
                     </ul>
                 </div>
-                <div className={styles.section_expeditions__sort_wrapper}>
-                    <input className={`${styles.section_expeditions__input} input`} type='text' placeholder='Поиск'/>
-                </div>
+                <input className={`${styles.section_expeditions__input} input`} type='text' placeholder='Поиск'/>
             </div>
             <div className={styles.section_expeditions__tours_wrapper}>
                 {
                     tours.map((tourItem) => (
                         <div className={styles.section_expeditions__tour} key={tourItem.id} id={tourItem.id}>
-                            <img className={styles.section_expeditions__tour_img} width={358} height={206} src={tourItem.img} alt={tourItem.title}/>
+                            <Link to={`/expeditions/${tourItem.slug}`}><img className={styles.section_expeditions__tour_img} width={358} height={206} src={tourItem.img}/></Link>
                             <div className={styles.section_expeditions__tour_information}>
                                 <p className={styles.section_expeditions__tour_country}>{tourItem.country}</p>
                                 <Link className={styles.section_expeditions__tour_title} to={`/expeditions/${tourItem.slug}`}>{tourItem.title}</Link>

@@ -1,8 +1,9 @@
 const archeologyTours = [
     {
         id: 'peru',
-        slug: 'peru',
+        slug: 'Huanchaco-and-northern-Peru',
         img: './src/images/tours/peru.png',
+        imgPage: '../src/images/expeditions/Peru/peru.jpeg',
         country: 'Перу',
         title: 'Уанчако и север Перу',
         description: 'Север Перу и территории вокруг Уанчако были заселены более 3500 лет назад. Этот район привлекает внимание всего мира благодаря статьям в National Geographic и журнале Archeology о местах жертвоприношений и культуре Чиму.',
@@ -11,8 +12,9 @@ const archeologyTours = [
     },
     {
         id: 'greece',
-        slug: 'greece',
+        slug: 'Echo-of-Athens',
         img: './src/images/tours/greece.png',
+        imgPage: '../src/images/expeditions/Athens/athens.jpg',
         country: 'Греция',
         title: 'Эхо Афин: по следам философов и богов',
         description: 'Погрузитесь в атмосферу античной Эллады, прогуливаясь по улицам Афин, Акрополю и театрам, где родилась демократия и философия.',
@@ -21,9 +23,10 @@ const archeologyTours = [
     },
     {
         id: 'iraq',
-        slug: 'iraq',
+        slug: 'Mesopotamia-under-the-sands',
         country: 'Ирак',
         img: './src/images/tours/iraq.png',
+        imgPage: '../src/images/expeditions/Mesopotamia/Mesopotamia.webp',
         title: 'Под песками Месопотамии',
         description: 'Познакомьтесь с колыбелью человеческой цивилизации, пройдя по древним руинам Вавилона, Ура и других шумерских городов, где зародились письменность, первые города-государства и мифы, повлиявшие на культуру всего мира.',
         durationDays: 9,
@@ -31,8 +34,10 @@ const archeologyTours = [
     },
     {
         id: 'italy',
+        slug: 'Tuscany-Italy',
         img: './src/images/tours/italy.png',
-        country: 'Италия, Тоскана',
+        imgPage: '../src/images/expeditions/Italy/Italy.jpeg',
+        country: 'Италия',
         title: 'Время Этрусков',
         description: 'Узнайте о загадочном народе, который предшествовал римлянам, среди мягких холмов, некрополей и музеев Тосканы.',
         durationDays: 7,
@@ -40,7 +45,9 @@ const archeologyTours = [
     },
     {
         id: 'serbia',
+        slug: 'Serbia-Bosnia',
         img: './src/images/tours/serbia.png',
+        imgPage: '../src/images/expeditions/Serbia/Serbia.jpg',
         country: 'Сербия, Босния',
         title: 'Балканы: древние тропы иллирийцев',
         description: 'Путешествуйте по крепостям, курганам и пещерам Балкан, где жили племена задолго до прихода римлян и славян.',
@@ -49,8 +56,10 @@ const archeologyTours = [
     },
     {
         id: 'england',
+        slug: 'Stones-of-Adrian',
         country: "Англия",
         img: './src/images/tours/england.png',
+        imgPage: '../src/images/expeditions/England/England.jpg',
         title: 'Археологические раскопки у Стены Адриана, Англия',
         description: 'Стена Адриана — впечатляющий объект Всемирного наследия ЮНЕСКО, протянувшийся на 73 мили через северную Британию.',
         durationDays: 10,
@@ -58,7 +67,9 @@ const archeologyTours = [
     },
     {
         id: 'cambodia',
+        slug: 'Angkor-Wat',
         img: './src/images/tours/cambodia.png',
+        imgPage: '../src/images/expeditions/Cambodia/Cambodia.jpg',
         country: 'Камбоджа',
         title: 'Забытые храмы Ангкора',
         description: 'Исследуйте гигантские храмовые комплексы в джунглях, где на камне запечатлены сцены древних эпосов и жизнь великой кхмерской империи.',
@@ -67,7 +78,9 @@ const archeologyTours = [
     },
     {
         id: 'norway',
+        slug: 'Vikings',
         img: './src/images/tours/norway.png',
+        imgPage: '../src/images/expeditions/Norway/Norway.jpg',
         country: 'Норвегия',
         title: 'Следами викингов',
         description: 'Пройдитесь по раскопкам кораблей, древним курганам и музеям, чтобы понять, кем были настоящие викинги — воины, мореплаватели и торговцы.',
