@@ -1,8 +1,8 @@
 import { useParams } from 'react-router-dom';
 import tours from '../../data/tours.js';
 
-import Header from '../../components/Header/Header.jsx';
-import InnerPageIntro from '../../components/InnerPageIntro/InnerPageIntro.jsx';
+import Header from '../../components/layout/Header/Header.jsx';
+import InnerPageIntro from '../../components/intro/InnerPageIntro/InnerPageIntro.jsx';
 import styles from './ExpeditionPage.module.css';
 
 function ExpeditionPage() {

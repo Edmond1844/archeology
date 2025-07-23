@@ -1,7 +1,7 @@
 import styles from './Contact.module.css';
 
-import Header from '../../components/Header/Header.jsx';
-import InnerPageIntro from '../../components/InnerPageIntro/InnerPageIntro.jsx';
+import Header from '../../components/layout/Header/Header.jsx';
+import InnerPageIntro from '../../components/intro/InnerPageIntro/InnerPageIntro.jsx'
 function Contact() {
     return (
         <>  

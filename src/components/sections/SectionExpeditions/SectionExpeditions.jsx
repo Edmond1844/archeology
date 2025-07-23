@@ -1,5 +1,5 @@
 import styles from './SectionExpeditions.module.css';
-import ButtonsActions from '../ButtonsActions/ButtonsActions.jsx';
+import ButtonsActions from '../../common/ButtonsActions/ButtonsActions.jsx';
 
 import { Link } from 'react-router-dom';
 

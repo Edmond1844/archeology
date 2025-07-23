@@ -1,8 +1,8 @@
-import Hero from '../../components/Hero/Hero.jsx';
-import SectionExpeditions from '../../components/SectionExpeditions/SectionExpeditions.jsx';    
-import SectionQuestions from '../../components/SectionQuestions/SectionQuestions.jsx';
-import SectionSubscription from '../../components/SectionSubscription/SectionSubscription.jsx';
-import Footer from '../../components/Footer/Footer.jsx';
+import Hero from '../../components/layout/Hero/Hero.jsx';
+import SectionExpeditions from '../../components/sections/SectionExpeditions/SectionExpeditions.jsx';    
+import SectionQuestions from '../../components/sections/SectionQuestions/SectionQuestions.jsx';
+import SectionSubscription from '../../components/sections/SectionSubscription/SectionSubscription.jsx';
+import Footer from '../../components/layout/Footer/Footer.jsx';
 
 import filterButtons from '../../data/filterButtons.js';
 import archeologyTours from '../../data/tours.js';

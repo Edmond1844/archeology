@@ -1,4 +1,4 @@
-import BrandingText from '../BrandingText/BrandingText.jsx';
+import BrandingText from '../../common/BrandingText/BrandingText.jsx';
 import styels from './Footer.module.css';
 
 import { Link } from 'react-router-dom';

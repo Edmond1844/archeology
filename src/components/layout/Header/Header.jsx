@@ -1,5 +1,5 @@
 import styles from './Header.module.css';
-import BrandingText from '../BrandingText/BrandingText.jsx';
+import BrandingText from '../../common/BrandingText/BrandingText.jsx';
 import { NavLink } from 'react-router-dom';
 
 function Header() {
