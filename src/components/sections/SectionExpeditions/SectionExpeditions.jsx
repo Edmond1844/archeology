@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function SectionExpeditions({bottonList, tours}) {
     return (
-        <section className={`${styles.section_expeditions} container`}>
+        <section className={styles.section_expeditions}>
             <div className={styles.section_expeditions__header}>
                 <div>
                     <h3 className={styles.section_expeditions__title}>Наши экспедиции</h3>
@@ -35,7 +35,7 @@ function SectionExpeditions({bottonList, tours}) {
                                 <p className={styles.section_expeditions__tariff_text}>{tourItem.durationDays} Дней</p>
                                 <p className={styles.section_expeditions__tariff_text}>От ${tourItem.price}/ чел.</p>
                                 <div >
-                                    <ButtonsActions />
+                                    <ButtonsActions tours={[tourItem]}/>
                                 </div>
                             </div>
                         </div>

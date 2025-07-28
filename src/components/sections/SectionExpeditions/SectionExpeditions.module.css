@@ -1,9 +1,8 @@
 .section_expeditions {
-    padding: 80px 200px;
-}
-
-.section_expeditions__tour_information {
-    width: 648px;
+    padding: 80px 50px;
+    margin: 0 auto;
+    
+    width: 1520px;
 }
 
 .section_expeditions__header {
@@ -26,8 +25,6 @@
 }
 
 .section_expeditions__list {
-    width: 758px;
-
     display: flex;
     flex-wrap: wrap;
 
@@ -38,6 +35,19 @@
 /* .section_expeditions__item {
 
 } */
+
+.section_expeditions__tour {
+    display: flex;
+    column-gap: 43px;
+
+    margin-bottom: 40px;
+}
+
+
+.section_expeditions__tour_information {
+    width: 648px;
+}
+
 
 .section_expeditions__tour_country {
     text-transform: uppercase;
@@ -95,16 +105,9 @@
 } */
 
 .section_expeditions__input {
-    width: 347px;
+    height: 40px;
     padding-top: 10px;
     padding-bottom: 16px;
-}
-
-.section_expeditions__tour {
-    display: flex;
-    column-gap: 43px;
-
-    margin-bottom: 40px;
 }
 
 .section_expeditions__tariff_wrapper {
