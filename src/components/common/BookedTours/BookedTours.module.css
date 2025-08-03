@@ -1,0 +1,50 @@
+.сart_booked_tours {
+    position: fixed;
+    top: 25%;
+    right: 0;
+
+    border-radius: 0 5px 5px 5px;
+    
+    width: 500px;
+    min-height: 500px;
+
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+    transform: translateX(100%);
+    transition: transform 0.2s;
+}
+
+.cart_booked_tours__open {
+    right: 0;
+
+    transform: translateX(0);
+    transition: transform 0.2s;
+}
+
+.сart_booked_tours__button {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+
+    writing-mode: vertical-rl;
+    /* text-orientation: upright; 
+    letter-spacing: 2px; */
+
+    position: absolute;
+    top: 0;
+    left: -32px;
+
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.сart_booked_tours__title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+
+    line-height: 50px;
+
+    text-align: center;
+}

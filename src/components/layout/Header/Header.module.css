@@ -5,6 +5,12 @@
     top: 0;
     left: 0;
     right: 0;
+
+    z-index: 10;
+}
+
+.header__banner {
+    
 }
 
 .header__wrapper_content {
@@ -19,11 +25,13 @@
     column-gap: 130px;
 }
 
-/* .header__title {
-}
+.header__title {
+
+} 
 
 .header__subtitle{
-} */
+    
+} 
 
 .header__nav {
     width: 562px;
@@ -37,12 +45,12 @@
     row-gap: 10px;
 }
 
-/* .header__nav_item {
+.header__nav_item {
 }
 
 .header__nav_link{
 
-} */
+}
 
 .header__button {
     width: 236px;

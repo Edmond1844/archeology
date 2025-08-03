@@ -1,4 +1,6 @@
 .section_expeditions {
+    position: relative;
+    
     padding: 80px 50px;
     margin: 0 auto;
     
@@ -45,7 +47,7 @@
 
 
 .section_expeditions__tour_information {
-    width: 648px;
+    width: 630px;
 }
 
 

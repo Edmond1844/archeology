@@ -17,7 +17,6 @@ function Home() {
                 <SectionExpeditions bottonList={filterButtons} tours={archeologyTours}/>
                 <SectionQuestions questions={questions}/>
                 <SectionSubscription />
-                <ButtonsActions tours={archeologyTours}/>
             </main>
             <Footer />
         </>

@@ -1,5 +1,6 @@
 import styles from './SectionExpeditions.module.css';
 import ButtonsActions from '../../common/ButtonsActions/ButtonsActions.jsx';
+import BookedTours from '../../common/BookedTours/BookedTours.jsx';
 
 import { Link } from 'react-router-dom';
 
@@ -41,8 +42,8 @@ function SectionExpeditions({bottonList, tours}) {
                         </div>
                     ))
                 }
-
             </div>
+            <BookedTours />
         </section>
     )
 }
