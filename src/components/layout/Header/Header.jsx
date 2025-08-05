@@ -2,6 +2,8 @@ import styles from './Header.module.css';
 import BrandingText from '../../common/BrandingText/BrandingText.jsx';
 import { NavLink } from 'react-router-dom';
 
+import iconBurger from '../../../images/svg/icon-menu.svg';
+
 function Header() {
     return (
         <header className={styles.header}>
@@ -29,6 +31,29 @@ function Header() {
                     </ul>
                 </nav>  
                 <button className={styles.header__button} type='button'>Связаться с нами</button>
+                <button className={styles.header__burger}>
+                    <img src={iconBurger}/>
+                </button>
+                <div className={styles.header__burger_menu}>
+                    <button className={styles.header__burger_close}>X</button>
+                    <ul className={styles.header__nav_list}>
+                        <li className={styles.header__nav_item}>
+                            <NavLink className={`${styles.header__nav_link} links-list`} to='/directions'>Направления</NavLink>
+                        </li>
+                        <li className={styles.header__nav_item}>
+                            <NavLink className={`${styles.header__nav_link} links-list`} to='/'>Экспедиции</NavLink>
+                        </li>
+                        <li className={styles.header__nav_item}>
+                            <NavLink className={`${styles.header__nav_link} links-list`} href="#">О нас</NavLink>
+                        </li>
+                        <li className={styles.header__nav_item}>
+                            <NavLink className={`${styles.header__nav_link} links-list`} href="#">Блог</NavLink>
+                        </li>
+                        <li className={styles.header__nav_item}>
+                            <NavLink className={`${styles.header__nav_link} links-list`} to='/contact'>Контакты</NavLink>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
     )

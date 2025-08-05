@@ -9,7 +9,7 @@ function Hero() {
     return (
         <div className={styles.hero} style={{ backgroundImage: `url(${heroImage})`}}>
             <Header />
-            <MainIntro />
+            {/* <MainIntro /> */}
         </div>
     )
 }

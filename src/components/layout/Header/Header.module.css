@@ -1,67 +1,206 @@
-.header {
-    background-color: rgba(0, 0, 0, 0.2);
+    .header {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    .header__button {
+        display: none;
+    }
 
-    z-index: 10;
+    .header__burger {
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        
+    }
+
+    .header__burger img {
+        width: 40px;
+        height: 40px;
+
+        color: #fff;
+    }
+
+    .header__banner {
+        
+    }
+
+    .header__wrapper_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+    }
+
+    .header__title {
+
+    } 
+
+    .header__subtitle{
+        
+    } 
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__nav_list {
+        /* display: flex;
+        flex-wrap: wrap;
+
+        column-gap: 52px;
+        row-gap: 10px; */
+    }
+
+    .header__nav_item:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    .header__burger_menu {
+        position: absolute;
+        top: 140px;
+        left: 0;
+
+        width: 100%;
+        min-height: 300px;
+
+        background: rgba(0, 0, 0, 0.2);
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* opacity: 0; */
+        transition: all 0.3s ease;
+    }
+
+    .header__burger_close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        color: #fff;
+    }
+
+    .header__nav_link{
+
+    }
+
+    /* .header__button {
+        width: 236px;
+
+        line-height: 30px;
+
+        padding: 10px 20px;
+
+        background-color: rgba(255, 255, 255, 0);
+        color: #fff;
+
+        border: 1px solid rgba(255, 255, 255, 1);
+        border-radius: 7px;
+    } */
+
+
+@media (min-width: 886px) {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        z-index: 10;
+    }
+
+    .header__button {
+        display: block;
+        
+        width: 236px;
+
+        line-height: 30px;
+
+        padding: 10px 20px;
+
+        background-color: rgba(255, 255, 255, 0);
+        color: #fff;
+
+        border: 1px solid rgba(255, 255, 255, 1);
+        border-radius: 7px;
+    }
+
+    .header__burger {
+        display: none;
+    }
+
+    .header__burger_menu {
+        display: none;
+    }
+
+    .header__nav {
+        display: block;
+        width: 562px;
+    }
+
+    .header__nav_list {
+        display: flex;
+        flex-wrap: wrap;
+
+        column-gap: 52px;
+        row-gap: 10px;
+    }
 }
 
-.header__banner {
-    
-}
 
-.header__wrapper_content {
-    display: flex;
-    justify-content: space-between;
+@media (min-width: 1440px) {
+    .header {
+        /* background-color: rgba(0, 0, 0, 0.2);
 
-    align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
 
-    margin: 0 auto;
-    padding: 32px 50px;
+        z-index: 10; */
+    }
 
-    column-gap: 130px;
-}
+    .header__banner {
+        
+    }
 
-.header__title {
+    .header__wrapper_content {
+        margin: 0 auto;
+        padding: 32px 50px;
+    }
 
-} 
+    .header__title {
 
-.header__subtitle{
-    
-} 
+    } 
 
-.header__nav {
-    width: 562px;
-}
+    .header__subtitle{
+        
+    } 
 
-.header__nav_list {
-    display: flex;
-    flex-wrap: wrap;
+    .header__nav_list {
+    }
 
-    column-gap: 52px;
-    row-gap: 10px;
-}
+    .header__nav_item {
+    }
 
-.header__nav_item {
-}
+    .header__nav_link{
 
-.header__nav_link{
+    }
 
-}
+    .header__button {
+        width: 236px;
 
-.header__button {
-    width: 236px;
+        line-height: 30px;
 
-    line-height: 30px;
+        padding: 10px 20px;
 
-    padding: 10px 20px;
+        background-color: rgba(255, 255, 255, 0);
+        color: #fff;
 
-    background-color: rgba(255, 255, 255, 0);
-    color: #fff;
-
-    border: 1px solid rgba(255, 255, 255, 1);
-    border-radius: 7px;
+        border: 1px solid rgba(255, 255, 255, 1);
+        border-radius: 7px;
+    }
 }
