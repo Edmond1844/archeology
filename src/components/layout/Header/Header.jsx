@@ -1,10 +1,24 @@
+import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
+
 import styles from './Header.module.css';
 import BrandingText from '../../common/BrandingText/BrandingText.jsx';
-import { NavLink } from 'react-router-dom';
+import ButtonContactUs from '../../common/ButtonContactUs/ButtonContactUs.jsx';
 
+import iconPhone from '../../../images/svg/icon-phone.svg';
 import iconBurger from '../../../images/svg/icon-menu.svg';
+import iconClose from '../../../images/svg/icon-close.svg';
 
 function Header() {
+    const [isOpen, setIsOpen] = useState(false);
+    function toggleButton() {
+        setIsOpen(!isOpen);
+    }
+
+    const buttonBurger = isOpen ? iconClose : iconBurger;
+
+    
+
     return (
         <header className={styles.header}>
             <div className={`${styles.header__wrapper_content} container`}>
@@ -30,12 +44,14 @@ function Header() {
                         </li>
                     </ul>
                 </nav>  
-                <button className={styles.header__button} type='button'>Связаться с нами</button>
-                <button className={styles.header__burger}>
-                    <img src={iconBurger}/>
+                <ButtonContactUs />
+                <button className={styles.header__button_icon}>
+                    <img src={iconPhone}/>
                 </button>
-                <div className={styles.header__burger_menu}>
-                    <button className={styles.header__burger_close}>X</button>
+                <button className={styles.header__button_icon} onClick={toggleButton}>
+                    <img src={buttonBurger}/>
+                </button>
+                <div className={`${styles.header__burger_menu } ${isOpen ? styles.header__burger_menu_open : ''}`}>
                     <ul className={styles.header__nav_list}>
                         <li className={styles.header__nav_item}>
                             <NavLink className={`${styles.header__nav_link} links-list`} to='/directions'>Направления</NavLink>

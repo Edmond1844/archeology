@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 function SectionExpeditions({bottonList, tours}) {
     return (
-        <section className={styles.section_expeditions}>
+        <section className={`${styles.section_expeditions} container`}>
             <div className={styles.section_expeditions__header}>
                 <div>
                     <h3 className={styles.section_expeditions__title}>Наши экспедиции</h3>

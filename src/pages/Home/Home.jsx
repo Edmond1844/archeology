@@ -13,12 +13,12 @@ function Home() {
     return (
         <>
             <Hero />
-            {/* <main>
+            <main>
                 <SectionExpeditions bottonList={filterButtons} tours={archeologyTours}/>
-                <SectionQuestions questions={questions}/>
-                <SectionSubscription />
+                {/* <SectionQuestions questions={questions}/>
+                <SectionSubscription /> */}
             </main>
-            <Footer /> */}
+            {/* <Footer /> */}
         </>
     )
 }

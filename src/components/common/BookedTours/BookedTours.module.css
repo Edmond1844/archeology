@@ -3,10 +3,10 @@
     top: 25%;
     right: 0;
 
-    border-radius: 0 5px 5px 5px;
+    border-radius: 0 0 0 5px;
     
-    width: 500px;
-    min-height: 500px;
+    width: 250px;
+    min-height: 200px;
 
     background: #fff;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -28,8 +28,6 @@
     font-size: 20px;
 
     writing-mode: vertical-rl;
-    /* text-orientation: upright; 
-    letter-spacing: 2px; */
 
     position: absolute;
     top: 0;
@@ -47,4 +45,11 @@
     line-height: 50px;
 
     text-align: center;
+}
+
+@media (min-width: 886px) {
+    .сart_booked_tours {
+        width: 500px;
+        min-height: 500px;
+    }
 }

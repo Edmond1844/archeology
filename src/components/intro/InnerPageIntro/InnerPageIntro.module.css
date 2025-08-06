@@ -1,43 +1,67 @@
 .intro__content {
-    padding: 350px 0 20px;
+    padding: 50px 0 20px;
 
     text-align: center;
 }
 
 .intro__content_wrapper {
-    display: flex;
-    justify-content: center;
-    column-gap: 15px;
-
-    margin-bottom: 24px;
-}
-
-.intro__content_text {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-
-    line-height: 30px;
-
-    color: #fff;
-}
-
-.intro__content_text:not(:last-child)::after {
-    content: "";
-    height: 3px;
-
-    margin-left: 15px;
-
-    border: 1px solid #fff;
+    display: none;
 }
 
 .intro__content_title {
     font-family: "Oswald", sans-serif;
     font-weight: 700;
-    font-size: 200px;
+    font-size: 50px;
 
     text-transform: uppercase;
 
     color: #fff;
 }
 
+@media (min-width: 886px) {
+    .intro__content_wrapper {
+        display: block;
+        display: flex;
+        justify-content: center;
+        column-gap: 15px;
+
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .intro__content {
+        padding: 350px 0 20px;
+    }
+
+    .intro__content_wrapper {
+        column-gap: 15px;
+
+        margin-bottom: 24px;
+    }
+
+    .intro__content_text {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+
+        line-height: 30px;
+
+        color: #fff;
+    }
+
+    .intro__content_text:not(:last-child)::after {
+        content: "";
+        height: 3px;
+
+        margin-left: 15px;
+
+        border: 1px solid #fff;
+    }
+
+    .intro__content_title {
+        font-size: 200px;
+
+        color: #fff;
+    }
+}

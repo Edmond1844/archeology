@@ -38,7 +38,7 @@ button {
 }
 
 .container {
-  max-width: 340px;
+  max-width: 320px;
 
   margin: 0 auto;
   padding: 20px 0;
@@ -55,6 +55,16 @@ button {
     color: #fff;
 }
 
+.input {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+
+    width: 100%;
+
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
 
 @media (min-width: 886px) {
   .container {
@@ -63,15 +73,27 @@ button {
     margin: 0 auto;
   }
   
-.links-list {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
+  .links-list {
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-size: 16px;
 
-    Line-height: 100%;
+      Line-height: 100%;
 
-    color: #fff;
-}
+      color: #fff;
+  }
+
+  .input {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+
+      width: 256px;
+
+      border: 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
 
 }
 
@@ -89,15 +111,6 @@ button {
 
 .via {
     color: tomato;
-}
-
-.input {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-
-    border: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .input:focus-visible {
