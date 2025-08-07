@@ -30,6 +30,9 @@
 
 }
 
+.section_expeditions__tour_information {
+    margin-bottom: 20px;
+}
 
 .section_expeditions__button {
     border: none;
@@ -46,9 +49,84 @@
     padding-top: 10px;
     padding-bottom: 16px;
     margin: 20px 0;
-    
 }
 
+.section_expeditions__tours_wrapper {
+}
+
+.section_expeditions__tours_wrapper__none {
+    display: none;
+}
+
+.section_expeditions__tour_img {
+    width: 100%;
+    height: 206px;
+}
+
+.section_expeditions__tour_country {
+    text-transform: uppercase;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+
+    color: #4997d3;
+
+    margin-top: 10px;
+    margin-bottom: 16px;
+    margin-left: 28px;
+}
+
+.section_expeditions__tour_title {
+    display: block;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+
+    color: #222222;
+
+    margin-bottom: 14px;
+}
+
+.section_expeditions__tour_description {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #999999;
+}
+
+.section_expeditions__tariff_text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    margin-bottom: 10px;
+
+    color: #222222;
+
+    opacity: 75%;
+}
+
+.section_expeditions__tariff_button_wrapper {
+    display: flex;
+    column-gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+@media (min-width: 886px) {
+    .section_expeditions__tour_img {
+        width: 358px;
+        height: 206px;
+    }
+
+    .section_expeditions__tariff_button_wrapper {
+        margin: 0;
+    }
+}
 
 @media (min-width: 1440px) {
     .section_expeditions {
@@ -84,48 +162,35 @@
         margin-bottom: 40px;
     }
 
-
     .section_expeditions__tour_information {
         width: 630px;
+
+        margin: 0;
     }
 
 
     .section_expeditions__tour_country {
-        text-transform: uppercase;
-
-        font-family: "Poppins", sans-serif;
         font-weight: 400;
         font-size: 20px;
 
         letter-spacing: 9px;
         line-height: 30px;
 
-        color: #4997d3;
-
         margin-bottom: 16px;
         margin-left: 28px;
+        margin-top: 0;
     }
 
     .section_expeditions__tour_title {
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
         font-size: 32px;
 
         line-height: 40px;
-
-        color: #222222;
-
-        margin-bottom: 14px;
     }
 
     .section_expeditions__tour_description {
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
         font-size: 20px;
 
         line-height: 30px;
-
-        color: #999999;
     }
 
     .section_expeditions__button {
@@ -151,13 +216,7 @@
     }
 
     .section_expeditions__tariff_text {
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
         font-size: 20px;
-
-        color: #222222;
-
-        opacity: 75%;
 
         margin-bottom: 16px;
     }

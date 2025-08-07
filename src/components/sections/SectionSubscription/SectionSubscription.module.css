@@ -1,61 +1,56 @@
 .section_subscription {
-    padding: 150px 20px;
+    padding: 50px 20px;
 
     text-align: center;
 }
 
 .section_subscription__title {
-    text-transform: uppercase;
-
-    margin-bottom: 32px;
-
     font-family: "Oswald", sans-serif;
     font-weight: 700;
-    font-size: 100px;
+    font-size: 18px;
 
-    line-height: 100px;
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+
+    line-height: 40px;
 
     color: rgba(34, 34, 34, 1);
 }
 
 .section_subscription__text {
-    max-width: 1152px;
-
-    margin: 0 auto;
-
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
 
-    line-height: 30px;
+    text-align: left;
 
-    margin-bottom: 32px;
+    line-height: 20px;
+
+    margin-bottom: 20px;
+    margin-left: 5px;
 
     color: rgba(34, 34, 34, 1);
 }
 
 .section_subscription__input {
-    line-height: 30px;
+    line-height: 20px;
 
     color: #999;
 
-    width: 551px;
+    padding: 5px;
+    margin-bottom: 20px;
 
-    padding: 25px 23px;
-
-    margin-right: 26px;
+    border-bottom: 1px solid #ccc;
 }
 
 .section_subscription__input::placeholder {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
 
     color: #999;
     opacity: 1;
-
-
-    line-height: 30px;
 }
 
 .section_subscription__input:focus-visible {
@@ -67,13 +62,66 @@
     font-weight: 500;
     font-size: 20px;
 
-    line-height: 30px;
-
-    padding: 26px 30px;
+    padding: 10px;
 
     border-radius: 10px;
     border: 0;
 
     color: #fff;
     background-color:   rgba(34, 34, 34, 1);
+
+    width: 100%;
+}
+
+@media (min-width:886px) {
+    .section_subscription {
+        padding: 150px 20px;
+    }
+
+    .section_subscription__title {
+        margin-bottom: 32px;
+
+        font-size: 100px;
+
+        line-height: 100px;
+    }
+
+    .section_subscription__text {
+        max-width: 1152px;
+
+        margin: 0 auto;
+
+        font-size: 20px;
+
+        line-height: 30px;
+
+        margin-bottom: 32px;
+    }
+
+    .section_subscription__input {
+        line-height: 30px;
+
+        width: 551px;
+
+        padding: 25px 23px;
+
+        margin-right: 26px;
+        margin-bottom: 0;
+    }
+
+    .section_subscription__input::placeholder {
+        font-size: 20px;
+
+        line-height: 30px;
+    }
+
+    .section_subscription__button {
+        font-size: 20px;
+
+        line-height: 30px;
+
+        padding: 26px 30px;
+
+        width: 200px;
+    }
 }

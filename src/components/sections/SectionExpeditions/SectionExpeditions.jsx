@@ -26,7 +26,7 @@ function SectionExpeditions({bottonList, tours}) {
                 {
                     tours.map((tourItem) => (
                         <div className={styles.section_expeditions__tour} key={tourItem.id} id={tourItem.id}>
-                            <Link to={`/expeditions/${tourItem.slug}`}><img className={styles.section_expeditions__tour_img} width={358} height={206} src={tourItem.img}/></Link>
+                            <Link to={`/expeditions/${tourItem.slug}`}><img className={styles.section_expeditions__tour_img} src={tourItem.img}/></Link>
                             <div className={styles.section_expeditions__tour_information}>
                                 <p className={styles.section_expeditions__tour_country}>{tourItem.country}</p>
                                 <Link className={styles.section_expeditions__tour_title} to={`/expeditions/${tourItem.slug}`}>{tourItem.title}</Link>
@@ -35,7 +35,7 @@ function SectionExpeditions({bottonList, tours}) {
                             <div className={styles.section_expeditions__tariff_wrapper}>
                                 <p className={styles.section_expeditions__tariff_text}>{tourItem.durationDays} Дней</p>
                                 <p className={styles.section_expeditions__tariff_text}>От ${tourItem.price}/ чел.</p>
-                                <div >
+                                <div className={styles.section_expeditions__tariff_button_wrapper}>
                                     <ButtonsActions tours={[tourItem]}/>
                                 </div>
                             </div>
