@@ -13,8 +13,8 @@
     border-radius: 7px;
 }
 
-/* @media (min-width: 886px) {
+@media (min-width: 886px) {
     .button_contact_us {
         display: block;
     }
-} */
+}

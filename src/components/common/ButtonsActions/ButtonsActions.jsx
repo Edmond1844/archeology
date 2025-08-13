@@ -6,17 +6,19 @@ import styles from './ButtonsActions.module.css';
 import BookedTours  from '../BookedTours/BookedTours.jsx';
 
 function ButtonsActions({ tours = [] }) { 
-    const [text, setText] = useState('Бронировать');
+    const [text, setText] = useState(false);
 
     function handleClick() {    
-        const buttonState = text ==='Бронировать';
-
-        buttonState ? setText('Убрать бронь') : setText('Бронировать');
+        if(text === false) {
+            setText(true);
+        } else {
+            setText(false);
+        }
     }
     
     return (
         <>
-            <button className={`${styles.book_button} button`} onClick={handleClick} type="button">{text}</button>
+            <button className={`${styles.book_button} button`} onClick={handleClick} type="button">{text === false ? 'Убрать бронь' : 'Бронировать'}</button>
             {
                 tours.map((item) => (
                     <Link to={`/expeditions/${item.slug}`} key={item.id}>
