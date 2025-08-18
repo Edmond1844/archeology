@@ -1,0 +1,19 @@
+import styles from './QuestionAnswer.module.css';
+import questionsList from '../../../data/questions.js';
+
+import Question from '../Question/Question.jsx';
+
+function QuestionAnswer() {
+    return (
+        <>
+            {
+                questionsList.map((questionItem) => (
+                    <Question key={questionItem.id} question={questionItem.question} answer={questionItem.answer} />
+                ))
+                
+            }
+        </>
+    )
+}
+
+export default QuestionAnswer;

@@ -7,6 +7,7 @@ const questions = [
     {
         id: 'questional2',
         question: 'Можно ли откопать себе сувенир?',
+        answer: 'Можно'
     },
     {
         id: 'questional3',

@@ -42,50 +42,6 @@
     color: rgb(53, 53, 53);
 }
 
-.section_questions__wrapper {
-    position: relative;
-
-    width: 100%;
-
-    border-radius: 10px;
-
-    background-color: #ffffff;
-
-    margin-bottom: 30px;
-    padding: 20px;
-
-    box-sizing: border-box;
-}
-
-.section_questions__question {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-
-    line-height: 20px;
-
-    opacity: 80%;
-
-    margin-bottom: 20px;
-}
-
-.section_questions__answer {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-
-    opacity: 75%;
-}
-
-.section_questions__answer_hidden {
-    display: none;
-}
-
-.section_questions__answer_visible {
-    display: block;
-}
-
-
 .section_questions__button_toggle {
     position: absolute;
     bottom: 10px;
@@ -117,20 +73,6 @@
     .section_questions__text {
         font-size: 20px;
 
-        line-height: 30px;
-
-        margin-bottom: 64px;
-    }
-
-    .section_questions__wrapper {
-        width: 987px;
-
-        padding: 36px 110px 29px 36px;
-    }
-
-    .section_questions__question {
-        font-size: 32px;
-
-        line-height: 40px;
+        margin-bottom: 25px;
     }
 }
