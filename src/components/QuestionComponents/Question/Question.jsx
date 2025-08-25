@@ -18,10 +18,14 @@ function Question({question, answer}) {
     return (
         <div className={styles.question__wrapper} onClick={toggleButton}>
             <h3 className={styles.question__title}>{question}</h3>
-            {isOpen ? <p className={styles.question__answer}>{answer}</p> : ''}
-            <button className={styles.question__button} style={{ backgroundColor: isOpen ? "" : "#fff" }}>
-                <img className={styles.question__button_img}  src={isOpen ? clouseArrow : openArrow}/>
-            </button>
+            { answer && (  
+                <>
+                    {isOpen ? <p className={styles.question__answer}>{answer}</p> : ''}
+                    <button className={styles.question__button} style={{ backgroundColor: isOpen ? "" : "#fff" }}>
+                        <img className={styles.question__button_img}  src={isOpen ? clouseArrow : openArrow}/>
+                    </button>
+                </>
+            )}
         </div>   
     )
 }

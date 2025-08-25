@@ -36,6 +36,15 @@ button {
 
   cursor: pointer;
 }
+button:disabled {
+
+  cursor: none;
+}
+
+
+label {
+  cursor: pointer;
+}
 
 .container {
   max-width: 320px;

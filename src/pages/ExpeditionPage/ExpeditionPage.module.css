@@ -10,9 +10,7 @@
 }
 
 .expedition_page__wrapper_content {
-    text-align: center;
-
-    padding: 150px 200px;
+    padding: 150px 20px;
 }
 
 .expedition_page__title {
@@ -35,5 +33,5 @@
 
     width: 800px;
 
-    margin: 0 auto;
+    margin-bottom: 20px;
 }

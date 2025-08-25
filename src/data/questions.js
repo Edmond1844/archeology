@@ -12,6 +12,7 @@ const questions = [
     {
         id: 'questional3',
         question: 'Как забронировать тур?',
+        answer: 'Пройти по ссылке'
     },
     {
         id: 'questional4',
