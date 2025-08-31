@@ -7,7 +7,7 @@ function QuestionAnswer() {
         <>
             {
                 questionsList.map((questionItem) => (
-                    <Question key={questionItem.id} question={questionItem.question} answer={questionItem.answer} />
+                    <Question key={questionItem.id} question={questionItem.question} answer={questionItem.answer} isActive={questionItem.isActive}/>
                 ))
                 
             }

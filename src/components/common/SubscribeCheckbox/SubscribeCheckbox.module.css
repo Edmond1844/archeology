@@ -1,3 +1,11 @@
+.subscription_form__label {
+    cursor: pointer;
+}
+
+.subscription_form__label input{
+    cursor: pointer;
+}
+
 .subscription_form {
 
 }

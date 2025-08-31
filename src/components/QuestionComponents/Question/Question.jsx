@@ -5,14 +5,14 @@ import styles from './Question.module.css';
 import clouseArrow from '../../../images/svg/clouse-arrow.svg';
 import openArrow from '../../../images/svg/open-arrow.svg';
 
-function Question({question, answer}) {
-    const [isOpen, setIsOpen] = useState(false);
+function Question({question, answer, isActive}) {
+    const [isOpen, setIsOpen] = useState(isActive);
 
     function toggleButton() {
-        if(isOpen === false) {
-            setIsOpen(true);
-        } else {
+        if(isOpen) {
             setIsOpen(false);
+        } else {
+            setIsOpen(true);
         }
     }
     return (

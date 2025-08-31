@@ -38,12 +38,7 @@ button {
 }
 button:disabled {
 
-  cursor: none;
-}
-
-
-label {
-  cursor: pointer;
+  cursor: auto;
 }
 
 .container {

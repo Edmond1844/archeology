@@ -85,7 +85,7 @@
     }
 
     .footer__copyright_list {
-        display: flex;
+        display: flex; 
         column-gap: 12px;
     }
 
