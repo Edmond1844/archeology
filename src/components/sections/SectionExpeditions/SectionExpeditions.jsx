@@ -1,10 +1,19 @@
 import styles from './SectionExpeditions.module.css';
-import ButtonsActions from '../../common/ButtonsActions/ButtonsActions.jsx';
+import { useState } from 'react';
+
+import ToursList from '../../tourСomponents/ToursList/ToursList.jsx';
+import ToursCard from '../../tourСomponents/ToursCard/ToursCard.jsx';
 import BookedTours from '../../common/BookedTours/BookedTours.jsx';
 
-import { Link } from 'react-router-dom';
-
 function SectionExpeditions({bottonList, tours}) {
+    const [storeListView, setStoreListView] = useState("list");
+    function handleButtonView() {
+        if (storeListView === "list") {
+            setStoreListView("column");
+        } else {
+            setStoreListView("list");
+        }
+    }
     return (
         <section className={`${styles.section_expeditions} container`}>
             <div className={styles.section_expeditions__header}>
@@ -20,28 +29,15 @@ function SectionExpeditions({bottonList, tours}) {
                         }
                     </ul>
                 </div>
-                <input className={`${styles.section_expeditions__input} input`} type='text' placeholder='Поиск'/>
+                <div>
+                    <input className={`${styles.section_expeditions__input} input`} type='text' placeholder='Поиск'/>
+                    <div>
+                        <button className={`${styles.section_expeditions__button_cards} button`} onClick={handleButtonView}>{storeListView === "list" ? "Списком" : "Карточками"}</button>
+                    </div>   
+                </div>
             </div>
-            <div className={styles.section_expeditions__tours_wrapper}>
-                {
-                    tours.map((tourItem) => (
-                        <div className={styles.section_expeditions__tour} key={tourItem.id} id={tourItem.id}>
-                            <Link to={`/expeditions/${tourItem.slug}`}><img className={styles.section_expeditions__tour_img} src={tourItem.img}/></Link>
-                            <div className={styles.section_expeditions__tour_information}>
-                                <p className={styles.section_expeditions__tour_country}>{tourItem.country}</p>
-                                <Link className={styles.section_expeditions__tour_title} to={`/expeditions/${tourItem.slug}`}>{tourItem.title}</Link>
-                                <p className={styles.section_expeditions__tour_description}>{tourItem.description}</p>
-                            </div>
-                            <div className={styles.section_expeditions__tariff_wrapper}>
-                                <p className={styles.section_expeditions__tariff_text}>{tourItem.durationDays} Дней</p>
-                                <p className={styles.section_expeditions__tariff_text}>От ${tourItem.price}/ чел.</p>
-                                <div className={styles.section_expeditions__tariff_button_wrapper}>
-                                    <ButtonsActions tours={[tourItem]}/>
-                                </div>
-                            </div>
-                        </div>
-                    ))
-                }
+            <div className={styles.section_expeditions__tours_wrapper}> 
+                {storeListView === "list" ?(<ToursCard tours={tours}/>) : (<ToursList tours={tours} />)}
             </div>
             <BookedTours />
         </section>

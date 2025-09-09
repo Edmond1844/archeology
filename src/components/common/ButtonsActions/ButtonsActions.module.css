@@ -22,10 +22,14 @@
 
 @media (min-width: 886px) {
     .book_button {
-        padding: 16px 25px;
+        box-sizing: border-box;
+
+        width: 185px;
+        height: 64px;
     }
 
     .details_button {
-        padding: 16px 23px;
+        width: 158px;
+        height: 64px;
     }
 }
