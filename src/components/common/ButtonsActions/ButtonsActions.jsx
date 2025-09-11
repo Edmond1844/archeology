@@ -5,7 +5,7 @@ import styles from './ButtonsActions.module.css';
 
 import BookedTours  from '../BookedTours/BookedTours.jsx';
 
-function ButtonsActions({ tours = [] }) { 
+function ButtonsActions({ tours = [], viewMode }) { 
     const [text, setText] = useState(false);
 
     function handleClick() {        
@@ -22,7 +22,7 @@ function ButtonsActions({ tours = [] }) {
             {
                 tours.map((item) => (
                     <Link to={`/expeditions/${item.slug}`} key={item.id}>
-                        <button className={`${styles.details_button} button`} type="button">Подробнее</button>
+                        <button className={`${styles.details_button} button ${viewMode === 'column' ?  styles.details_button_column : ''}`} type="button">Подробнее</button>
                     </Link>
                 ))
             }

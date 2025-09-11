@@ -27,6 +27,8 @@ ul, li{
 
 a {
   text-decoration: none;
+  all: unset;
+  display: block; 
 }
 
 button {

@@ -47,6 +47,18 @@
     margin: 20px 0;
 }
 
+.section_expeditions__button_cards {
+    width: 158px;
+    height: 48px;
+
+    background-color: #ffffff;
+    color: #433a3a;
+
+    border: 1px solid #dcd4d4;
+    border-radius: 10px;
+    
+}
+
 .section_expeditions__tours_wrapper__none {
     display: none;
 }

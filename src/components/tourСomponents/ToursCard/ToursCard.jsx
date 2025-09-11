@@ -3,24 +3,26 @@ import ButtonsActions from '../../common/ButtonsActions/ButtonsActions.jsx';
 
 import styles from "./ToursCard.module.css";
 
-function ToursCard({ tours }) {
+function ToursCard({ tours, viewMode }) {
     return (
         <>
-        <ul className={styles.tours_card}>
+        <ul className={styles.tours_card__list}>
             {
                 tours.map((tourItem) => (
-                    <Link to={`/expeditions/${tourItem.slug}`}>                    
-                        <li className={styles.tours_card__item}  key={tourItem.id} style={{ backgroundImage: `url(${tourItem.img})` }}>
-                            <h2>{tourItem.title}</h2>
-                            <div>
-                                <p>{tourItem.country}</p>
-                                <p>От {tourItem.price} / чел</p>
+                    <li className={styles.tours_card__item}  key={tourItem.id} style={{ backgroundImage: `url(${tourItem.img})`, backgroundColor: 'rgba(0, 0, 0, 0.2)', backgroundBlendMode: 'darken'}}>
+                        <div className={styles.tours_card__wrapper}>
+                            <Link className={styles.tours_card__link} to={`/expeditions/${tourItem.slug}`}> <h2 className={styles.tours_card__title}>{tourItem.title}</h2> </Link>
+                            <div className={styles.tours_card__description}>
+                                <p className={styles.tours_card__country}>{tourItem.country}</p>
+                                <p className={styles.tours_card__price}>От {tourItem.price} / чел</p>
                             </div>
-                        </li>
-                    </Link>
+                            <div className={styles.tours_card__buttons}>
+                                <ButtonsActions tours={[tourItem]} viewMode={viewMode}/>
+                            </div>
+                        </div>
+                    </li>
                 ))
             }
-            {/* <ButtonsActions tours={[tourItem]}/> */}
         </ul>
         </>
     );

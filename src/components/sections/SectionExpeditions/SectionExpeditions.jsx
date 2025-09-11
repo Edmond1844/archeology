@@ -32,12 +32,12 @@ function SectionExpeditions({bottonList, tours}) {
                 <div>
                     <input className={`${styles.section_expeditions__input} input`} type='text' placeholder='Поиск'/>
                     <div>
-                        <button className={`${styles.section_expeditions__button_cards} button`} onClick={handleButtonView}>{storeListView === "list" ? "Списком" : "Карточками"}</button>
+                        <button className={`${styles.section_expeditions__button_cards} button`} onClick={handleButtonView}>{storeListView === "list" ? "Карточками" : "Списком"}</button>
                     </div>   
                 </div>
             </div>
             <div className={styles.section_expeditions__tours_wrapper}> 
-                {storeListView === "list" ?(<ToursCard tours={tours}/>) : (<ToursList tours={tours} />)}
+                {storeListView === "list" ? (<ToursList tours={tours} />) : (<ToursCard viewMode={storeListView} tours={tours}/>)}
             </div>
             <BookedTours />
         </section>
