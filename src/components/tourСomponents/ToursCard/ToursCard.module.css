@@ -1,89 +1,78 @@
-.tours_card__list {
-    display: flex;
-    flex-wrap: wrap;
+@media (min-width: 1440px) {  
+    .tours_card__list {
+        display: flex;
+        flex-wrap: wrap;
 
-    column-gap: 30px;
-    row-gap: 30px;
+        column-gap: 30px;
+        row-gap: 30px;
 
-}
+    }
 
-.tours_card__item {
-    width: 453px;
-    min-height: 429px;
+    .tours_card__item {
+        background-color: rgba(0, 0, 0, 0.2);
+        background-blend-mode: darken;
+        
+        width: 453px;
+        min-height: 429px;
 
-    border-radius: 25px;
+        border-radius: 25px;
 
-    background-size: cover;
-    background-position: center;
+        background-size: cover;
+        background-position: center;
 
-    display: flex;
-    align-items: flex-end;
-}
-
-.tours_card__wrapper {
-    display: grid;
-    grid-row-gap: 10px;
-    grid-template-columns: 459px;
-    grid-template-rows: 70px 30px auto;
-
-    padding: 22px 20px;
-}
-
-.tours_card__country {
-
-}
-
-.tours_card__country::after {
-    content: ' | ';
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.tours_card__price {
-
-}
-
-.tours_card__title {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 32px;
-
-    line-height: 35px;
-
-    color: #ffffff;
-}
-
-
-.tours_card__description {
-    display: flex;
-
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-
-    color: #ffffff;
-}
-
-.tours_card__buttons {
-    display: flex;
-    column-gap: 14px;
-}
-
-@media (min-width: 1440px) {
-    .tours_card__item { 
+        display: flex;
+        align-items: flex-end;
     }
 
     .tours_card__wrapper {
+        display: grid;
+        grid-row-gap: 10px;
+        grid-template-columns: 459px;
+        grid-template-rows: 70px 30px auto;
+
+        padding: 22px 20px;
     }
-    
+
     .tours_card__link {
         cursor: pointer;
     }
 
+
+
+    .tours_card__country::after {
+        content: ' | ';
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .tours_card__price {
+
+    }
+
+    .tours_card__title {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 32px;
+
+        line-height: 35px;
+
+        color: #ffffff;
+    }
+
+
     .tours_card__description {
+        display: flex;
+
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+
+        color: #ffffff;
     }
 
     .tours_card__buttons {
+        display: flex;
+        column-gap: 14px;
     }
     
 }

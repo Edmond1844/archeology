@@ -1,7 +1,4 @@
-.tour_list {
-}
-
-.tours_list__title {
+.tours__title {
     display: block;
 
     font-family: "Poppins", sans-serif;
@@ -13,16 +10,16 @@
     margin-bottom: 14px;
 }
 
-.tours_list__information  {
+.tours__information  {
     margin-bottom: 20px;
 }
 
-.tours_list__img {
+.tours__img {
     width: 100%;
     height: 206px;
 }
 
-.tours_list__country {
+.tours__country {
     text-transform: uppercase;
 
     font-family: "Poppins", sans-serif;
@@ -37,18 +34,15 @@
     margin-left: 28px;
 } 
 
-.tours_list__tariff_button_wrapper {
+.tours__tariff_button_wrapper {
     display: flex;
-    column-gap: 10px;
+    column-gap: 40px;
 
     margin-bottom: 20px;
 }
 
 @media (min-width: 1440px) {
-    .tours_list {
-
-    }
-    .tour_list__item{
+    .tour__item{
         display: flex;
         align-items: center;
 
@@ -57,13 +51,13 @@
         margin-bottom: 40px;
     }
 
-    .tours_list__information {
+    .tours__information {
         width: 630px;
 
         margin: 0;
     }
 
-    .tours_list__country {
+    .tours__country {
         font-weight: 400;
         font-size: 20px;
 
@@ -75,26 +69,30 @@
         margin-top: 0;
     }
 
-    .tours_list__title {
+    .tours__title {
         font-size: 32px;
 
         line-height: 40px;
     }
 
-    .tours_list__description {
+    .tours__description {
         font-size: 20px;
 
         line-height: 30px;
     }
 
-    .tours_list__tariff_wrapper {
+    .tours__tariff_wrapper {
         margin-top: 60px;
         margin-left: 50px;
     }
 
-    .tours_list__tariff_text {
+    .tours__tariff_text {
         font-size: 20px;
 
         margin-bottom: 16px;
+    }
+
+    .tours__tariff_button_wrapper {
+        column-gap: 10px;
     }
 }

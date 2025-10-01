@@ -29,6 +29,8 @@ a {
   text-decoration: none;
   all: unset;
   display: block; 
+
+  cursor: pointer;
 }
 
 button {

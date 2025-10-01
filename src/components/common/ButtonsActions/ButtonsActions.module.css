@@ -1,5 +1,6 @@
 .book_button {
-    padding: 10px;
+    padding: 12px 10px;
+    min-width: 155px;
 
     border: none;
     border-radius: 10px;
@@ -9,6 +10,15 @@
 }
 
 .details_button {
+    display: inline-block;
+    text-align: center;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+
+    min-width: 12px;
+
     padding: 10px;
 
     border: 1px solid #4997d3;
@@ -30,12 +40,15 @@
     .book_button {
         box-sizing: border-box;
 
-        width: 185px;
-        height: 64px;
+        padding: 16px 12px;
+        min-width: 185px;
+
+    }
+    .details_button  {
+        box-sizing: border-box;
+        min-width: 158px;
+
+        padding: 16px 0;
     }
 
-    .details_button {
-        width: 158px;
-        height: 64px;
-    }
 }

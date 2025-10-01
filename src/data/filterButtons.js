@@ -2,27 +2,32 @@ const filterButtons = [
     {
         id: 'All',
         name: 'Все',
-        type: 'button'
+        type: 'button',
+        filterType: 'all'  
     },
     {
         id: 'Popular',
         name: 'Популярные',
-        type: 'button'
+        type: 'button',
+        filterType: 'popular'  
     },
     {
-        id: 'Family',
+        id: 'Family', 
         name: 'Семейные',
-        type: 'button'
+        type: 'button',
+        filterType: 'family'  
     },
     {
         id: 'Mythology',
-        name: 'Мифология',
-        type: 'button'
+        name: 'Мифология', 
+        type: 'button',
+        filterType: 'mythology'  
     },
     {
         id: 'Photography',
         name: 'Фототуры',
-        type: 'button'
+        type: 'button',
+        filterType: 'photo' 
     }
 ]
 
