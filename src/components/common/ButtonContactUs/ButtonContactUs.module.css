@@ -1,4 +1,4 @@
-.button_contact_us {
+.main_button_contact {
     display: none;
     width: 236px;
 
@@ -14,7 +14,7 @@
 }
 
 @media (min-width: 886px) {
-    .button_contact_us {
+    .main_button_contact {
         display: block;
     }
 }

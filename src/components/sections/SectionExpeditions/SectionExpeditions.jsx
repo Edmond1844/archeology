@@ -4,8 +4,9 @@ import { useState } from "react";
 import ToursList from "../../tourСomponents/ToursList/ToursList.jsx";
 import ToursCard from "../../tourСomponents/ToursCard/ToursCard.jsx";
 import BookedTours from "../../common/BookedTours/BookedTours.jsx";
+import MainButton from "../../common/MainButton/MainButton.jsx";
 
-function SectionExpeditions({ bottonList, tours }) {
+function SectionExpeditions({ buttonList, tours }) {
 	const [storeListView, setStoreListView] = useState("list");
 	function handleButtonView() {
 		if (storeListView === "list") {
@@ -15,14 +16,19 @@ function SectionExpeditions({ bottonList, tours }) {
 		}
 	}
 
-	const [filteredTours, setFilteredTours] = useState(tours);
-	function hendleFilter(typeFilter) {
-		if (typeFilter === "all") {
+	// Фильтрация
+
+	const [activeButton, setActiveButton] = useState("All"); // состояние активной кнопки
+	const [filteredTours, setFilteredTours] = useState(tours); // состояние отфильтрованных туров
+	function handlleClick(typeFilter) {
+		setActiveButton(typeFilter);
+		if (typeFilter === "All") {
 			setFilteredTours(tours);
 		} else {
-			setFilteredTours(
-				tours.filter((item) => item.category.includes(typeFilter)),
+			const filtered = tours.filter((item) =>
+				item.category.includes(typeFilter),
 			);
+			setFilteredTours(filtered);
 		}
 	}
 	return (
@@ -33,21 +39,23 @@ function SectionExpeditions({ bottonList, tours }) {
 						Наши экспедиции
 					</h3>
 					<ul className={styles.section_expeditions__list}>
-						{bottonList.map((btnItem) => (
+						{buttonList.map((btnItem) => (
 							<li
 								className={styles.section_expeditions__item}
 								key={btnItem.id}
 							>
-								<button
-									className={`${styles.section_expeditions__button} button`}
-									type="button"
-									id={btnItem.id}
+								<MainButton
 									onClick={() =>
-										hendleFilter(btnItem.filterType)
+										handlleClick(btnItem.filterType)
+									}
+									variant={
+										activeButton === btnItem.filterType
+											? "filtered_active"
+											: "filtered"
 									}
 								>
 									{btnItem.name}
-								</button>
+								</MainButton>
 							</li>
 						))}
 					</ul>
@@ -59,14 +67,14 @@ function SectionExpeditions({ bottonList, tours }) {
 						placeholder="Поиск"
 					/>
 					<div>
-						<button
-							className={`${styles.section_expeditions__button_toggle} button`}
+						<MainButton
 							onClick={handleButtonView}
+							variant={"toggle"}
 						>
 							{storeListView === "list"
 								? "Карточками"
 								: "Списком"}
-						</button>
+						</MainButton>
 					</div>
 				</div>
 			</div>

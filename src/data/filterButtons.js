@@ -3,7 +3,7 @@ const filterButtons = [
         id: 'All',
         name: 'Все',
         type: 'button',
-        filterType: 'all'  
+        filterType: 'All'  
     },
     {
         id: 'Popular',

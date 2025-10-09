@@ -74,6 +74,12 @@ button:disabled {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+/* .size_navigation_button {
+  min-width: 89px;
+  padding: 12px 20px;
+} */
+
+
 @media (min-width: 886px) {
   .container {
     max-width: 836px;

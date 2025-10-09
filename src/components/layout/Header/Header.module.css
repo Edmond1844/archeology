@@ -121,6 +121,10 @@
         column-gap: 52px;
         row-gap: 10px;
     }
+
+    .header__nav_item:not(:last-child) {
+        margin-bottom: 0;
+    }
 }
 
 
