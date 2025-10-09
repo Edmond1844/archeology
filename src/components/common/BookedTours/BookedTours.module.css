@@ -24,21 +24,6 @@
     transition: transform 0.2s;
 }
 
-.сart_booked_tours__button {
-    font-family: "Oswald", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-
-    writing-mode: vertical-rl;
-
-    position: absolute;
-    top: 0;
-    left: -32px;
-
-    border: none;
-    border-radius: 5px 0 0 5px;
-}
-
 .сart_booked_tours__title {
     font-family: "Oswald", sans-serif;
     font-weight: 500;

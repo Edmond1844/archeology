@@ -4,7 +4,6 @@ import { useState } from "react";
 import styles from "./Header.module.css";
 import BrandingText from "../../common/BrandingText/BrandingText.jsx";
 import MainButton from "../../common/MainButton/MainButton.jsx";
-// import ButtonContactUs from "../../common/ButtonContactUs/ButtonContactUs.jsx";
 
 import iconPhone from "../../../images/svg/icon-phone.svg";
 import iconBurger from "../../../images/svg/icon-menu.svg";
@@ -69,7 +68,6 @@ function Header() {
 					</ul>
 				</nav>
 				<MainButton variant="contact">Связаться с нами</MainButton>
-				{/* <ButtonContactUs /> */}
 				<button className={styles.header__button_icon}>
 					<img src={iconPhone} />
 				</button>

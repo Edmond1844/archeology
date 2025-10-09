@@ -39,6 +39,52 @@
     display: none;
 }
 
+/* booked */
+
+.main_button_add_booked {
+    padding: 12px 10px;
+    min-width: 155px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #4997d3;
+    color: #ffffff;
+}
+
+.main_button_booked {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+
+    writing-mode: vertical-rl;
+
+    position: absolute;
+    top: 0;
+    left: -32px;
+
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+/* subscription */
+
+.main_button_subscription {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+
+    padding: 10px;
+
+    border-radius: 10px;
+    border: 0;
+
+    color: #fff;
+    background-color:   rgb(0, 0, 0);
+
+    width: 100%;
+}
+
 
 @media (min-width: 886px) {
     /* Contacts */
@@ -52,7 +98,7 @@
     }
 
     /* toggle */
-.main_button_toggle {
+    .main_button_toggle {
         display: block;
         width: 158px;
         height: 48px;
@@ -62,10 +108,32 @@
 
         border: 1px solid #dcd4d4;
         border-radius: 10px;
-        
+            
         margin-top: 20px;
     }
+
+    /* booked */
+
+    .main_button_add_booked{
+        box-sizing: border-box;
+
+        padding: 16px 12px;
+        min-width: 185px;
+
+    }
+
+    /* subscription */
+    .main_button_subscription  {
+        font-size: 20px;
+
+        line-height: 30px;
+
+        padding: 26px 30px;
+
+        width: 200px;
+    }
 }
+
 
 /* 
 @media (min-width: 1440px) {

@@ -10,10 +10,20 @@ function MainButton({ children, variant, onClick }) {
 					? `${styles.main_button_filtered_active} ${styles.main_button_filtered}`
 					: variant === "toggle"
 						? styles.main_button_toggle
-						: "";
+						: variant === "bookingToggle"
+							? styles.main_button_add_booked
+							: variant === "myBookings"
+								? styles.main_button_booked
+								: variant === "subscribeToggle"
+									? styles.main_button_subscription
+									: "";
 
 	return (
-		<button className={`${buttonClass} button`} onClick={onClick}>
+		<button
+			className={`${buttonClass} button`}
+			onClick={onClick}
+			type="button"
+		>
 			{children}
 		</button>
 	);

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-
+import MainButton from "../MainButton/MainButton";
 import styles from "./ButtonsActions.module.css";
 
 function ButtonsActions({ slug, id, buttonType, viewMode }) {
@@ -16,14 +16,10 @@ function ButtonsActions({ slug, id, buttonType, viewMode }) {
 
 	return (
 		<>
-			<button
-				className={`${styles.book_button} button`}
-				onClick={handleClick}
-				type="button"
-			>
+			<MainButton variant="bookingToggle" onClick={handleClick}>
+				{" "}
 				{isBooked ? "Бронировать" : "Убрать бронь"}
-			</button>
-
+			</MainButton>
 			<Link
 				to={`/expeditions/${slug}`}
 				key={id}

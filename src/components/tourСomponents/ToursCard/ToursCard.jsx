@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
-import ButtonsActions from '../../common/ButtonsActions/ButtonsActions.jsx';
+import { Link } from "react-router-dom";
+// import ButtonsActions from "../../common/ButtonsActions/ButtonsActions.jsx";
 
-import styles from './ToursCard.module.css';
+import styles from "./ToursCard.module.css";
 
 function ToursCard({ tours, viewMode }) {
 	return (
@@ -18,10 +18,10 @@ function ToursCard({ tours, viewMode }) {
 								className={styles.tours_card__link}
 								to={`/expeditions/${tourItem.slug}`}
 							>
-								{' '}
+								{" "}
 								<h2 className={styles.tours_card__title}>
 									{tourItem.title}
-								</h2>{' '}
+								</h2>{" "}
 							</Link>
 							<div className={styles.tours_card__description}>
 								<p className={styles.tours_card__country}>
@@ -32,12 +32,12 @@ function ToursCard({ tours, viewMode }) {
 								</p>
 							</div>
 							<div className={styles.tours_card__buttons}>
-								<ButtonsActions
+								{/* <ButtonsActions
 									id={tourItem.id}
 									slug={tourItem.slug}
 									viewMode={viewMode}
 									buttonType="button"
-								/>
+								/> */}
 							</div>
 						</div>
 					</li>
