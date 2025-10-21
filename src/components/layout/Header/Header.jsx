@@ -44,7 +44,7 @@ function Header() {
 						<li className={styles.header__nav_item}>
 							<NavLink
 								className={`${styles.header__nav_link} links-list`}
-								href="#"
+								to="/about-us"
 							>
 								О нас
 							</NavLink>
@@ -52,7 +52,7 @@ function Header() {
 						<li className={styles.header__nav_item}>
 							<NavLink
 								className={`${styles.header__nav_link} links-list`}
-								href="#"
+								to={"/blog"}
 							>
 								Блог
 							</NavLink>

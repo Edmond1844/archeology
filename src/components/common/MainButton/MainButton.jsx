@@ -1,6 +1,6 @@
 import styles from "./MainButton.module.css";
 
-function MainButton({ children, variant, onClick }) {
+function MainButton({ children, variant, ...props }) {
 	const buttonClass =
 		variant === "contact"
 			? styles.main_button_contact
@@ -19,11 +19,7 @@ function MainButton({ children, variant, onClick }) {
 									: "";
 
 	return (
-		<button
-			className={`${buttonClass} button`}
-			onClick={onClick}
-			type="button"
-		>
+		<button className={`${buttonClass} button`} {...props} type="button">
 			{children}
 		</button>
 	);

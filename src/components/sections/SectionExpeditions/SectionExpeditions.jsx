@@ -20,7 +20,7 @@ function SectionExpeditions({ buttonList, tours }) {
 
 	const [activeButton, setActiveButton] = useState("All"); // состояние активной кнопки
 	const [filteredTours, setFilteredTours] = useState(tours); // состояние отфильтрованных туров
-	function handlleClick(typeFilter) {
+	function handleClick(typeFilter) {
 		setActiveButton(typeFilter);
 		if (typeFilter === "All") {
 			setFilteredTours(tours);
@@ -46,7 +46,7 @@ function SectionExpeditions({ buttonList, tours }) {
 							>
 								<MainButton
 									onClick={() =>
-										handlleClick(btnItem.filterType)
+										handleClick(btnItem.filterType)
 									}
 									variant={
 										activeButton === btnItem.filterType

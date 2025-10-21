@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-// import ButtonsActions from "../../common/ButtonsActions/ButtonsActions.jsx";
-
+import MainButton from "../../common/MainButton/MainButton";
 import styles from "./ToursCard.module.css";
 
 function ToursCard({ tours, viewMode }) {
@@ -32,12 +31,14 @@ function ToursCard({ tours, viewMode }) {
 								</p>
 							</div>
 							<div className={styles.tours_card__buttons}>
-								{/* <ButtonsActions
+								<MainButton
 									id={tourItem.id}
 									slug={tourItem.slug}
 									viewMode={viewMode}
 									buttonType="button"
-								/> */}
+								>
+									Бронировать
+								</MainButton>
 							</div>
 						</div>
 					</li>

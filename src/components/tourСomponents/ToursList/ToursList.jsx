@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-import ButtonsActions from '../../common/ButtonsActions/ButtonsActions.jsx';
+import ButtonsActions from "../../common/ButtonsActions/ButtonsActions.jsx";
 
-import styles from './ToursList.module.css';
+import styles from "./ToursList.module.css";
 function ToursList({ tours }) {
 	return (
 		<>
