@@ -21,7 +21,6 @@ function SectionSubscription() {
 					type="email"
 				/>
 				<MainButton variant="subscribeToggle">Подписаться</MainButton>
-				{/* <button className={styles.section_subscription__button} type='submit'>Подписаться</button> */}
 			</form>
 		</section>
 	);
