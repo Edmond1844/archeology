@@ -5,7 +5,7 @@
 
 | Файл | Компонент | Импорты | Описание | Props | Состояния |
 |------|-----------|---------|----------|-------|-----------|
-| **Header.jsx** | `Header` | `BrandingText`<br>` MainButton `<br>` iconPhone `<br>`iconBurger` <br> `iconClose` | Компонент шапки сайта с навигацией, логотипом и кнопками. Включает десктопное и мобильное меню | `-` | `isOpen: boolean` - состояние бургер-меню |
+| **Header.jsx** | `Header` | `BrandingText`<br>` MainButton `<br>` iconPhone `<br>`iconBurger` <br> `iconClose` | Компонент шапки сайта с навигацией, логотипом и кнопками. Включает десктопное и мобильное меню | `-` | `isOpen` - состояние бургер-меню |
 | **Hero.jsx** | `Hero` | ` Header` ` MainIntro ` | Контейнерный компонент, который объединяет шапку (Header) и основное вводное содержание (MainIntro) страницы | `-` | `-` |
 | **Footer.jsx** | `Footer` | ` BrandingText ` | Компонент Footer включает в себя BrandingText, основная навигация и соц. сети  | `-` | `-` |
 
@@ -23,3 +23,44 @@
 | **SectionExpeditions.jsx** | `SectionExpeditions` | `ToursList`<br>`ToursCard`<br>`BookedTours`<br>`MainButton` | Секция с фильтрацией и отображением экспедиций. Включает фильтры по категориям, переключение вида и поиск | `buttonList` - список кнопок-фильтров<br>`tours` - массив туров для отображения | `storeListView` - режим отображения ("list"/"column")<br>`activeButton` - активный фильтр<br>`filteredTours` - отфильтрованные туры |
 | **SectionQuestions.jsx** | `SectionQuestions` | `QuestionAnswer` | Секция с часто задаваемыми вопросами. Включает заголовок, описание и компонент вопросов-ответов | `-` | `-` |
 | **SectionSubscription.jsx** | `SectionSubscription` | `MainButton` | Секция подписки на рассылку с формой для email | `-` | `-` |
+
+## Папка common
+
+| Файл | Компонент | Импорты | Описание | Props | Состояния |
+|------|-----------|---------|----------|-------|-----------|
+| **BookedTours.jsx** | `BookedTours` |  `MainButton`, | Компонент забронированных туров с выдвижной панелью | `-` | `isOpen` - состояние открытия/закрытия панели |
+| **BrandingText.jsx** | `BrandingText` | `-` | Компонент с брендовым текстом - название и описание компании. Используется в Header и Footer | `-` | `-` |
+| **ButtonsActions.jsx** | `ButtonsActions` | `Link`, `MainButton`,  | Компонент кнопок действий для туров - бронирование и ссылка "Подробнее" | `slug` - идентификатор тура<br>`id` - id тура<br>`buttonType` - тип кнопки<br>`viewMode` - режим отображения | `isBooked` - состояние бронирования |
+| **MainButton.jsx** | `MainButton` | `-` | Универсальный компонент кнопки с вариантами стилей. Используется во многих компонентах проекта | `children` - содержимое кнопки<br>`variant` - вариант стиля (contact, filtered, toggle, bookingToggle, myBookings, subscribeToggle)<br>`...props` - остальные props кнопки | `-` |
+| **SubscribeCheckbox.jsx** | `SubscribeCheckbox` | `MainButton` | Компонент чекбокса подписки на рассылку с изменяемым текстом и состоянием кнопки | `-` | `checked` - состояние чекбокса подписки |
+
+## Папка QuestionComponents
+
+| Файл | Компонент | Импорты | Описание | Props | Состояния |
+|------|-----------|---------|----------|-------|-----------|
+| **QuestionAnswer.jsx** | `QuestionAnswer` | `questionsList`, `Question` | Компонент-контейнер для списка вопросов-ответов. Получает данные из questions.js и передает их в компоненты Question | `-` | `-` |
+| **Question.jsx** | `Question` | `clouseArrow`, `openArrow` | Компонент отдельного вопроса с аккордеоном. Получает данные от QuestionAnswer и управляет состоянием раскрытия | `question:` - текст вопроса<br>`answer` - текст ответа<br>`isActive` - начальное состояние | `isOpen` - состояние раскрытия |
+
+## Папка tourComponents
+
+| Файл | Компонент | Импорты | Описание | Props | Состояния |
+|------|-----------|---------|----------|-------|-----------|
+| **Tariff.jsx** | `Tariff` | - | Компонент тарифа тура, отображает длительность и цену | `days` - длительность тура<br>`price` - стоимость тура | `-` |
+| **Tariffs.jsx** | `Tariffs` | `Tariff` | Компонент-контейнер для отображения тарифов. Использует компонент Tariff для рендеринга отдельных тарифов | `-` | `-` |
+
+## Папка tourComponents
+
+| Файл | Компонент | Импорты | Описание | Props | Состояния |
+|------|-----------|---------|----------|-------|-----------|
+| **Tour.jsx** | `Tour` | `Tariffs` | Компонент детальной информации о туре. Отображает страну, заголовок, описание и подключает компонент тарифов | `country` - страна тура<br>`title` - название тура<br>`description` - описание тура | `-` |
+| **ToursCard.jsx** | `ToursCard` | `MainButton` | Компонент отображения туров в виде карточек. Используется в SectionExpeditions при viewMode "column" | `tours` - массив туров<br>`viewMode: string` - режим отображения | `-` |
+| **ToursList.jsx** | `ToursList` | `ButtonsActions` | Компонент отображения туров в виде списка. Используется в SectionExpeditions при viewMode "list" | `tours` - массив туров | `-` |
+| **Tariff.jsx** | `Tariff` | - | Компонент тарифа тура | `days` - длительность<br>`price` - стоимость | `-` |
+| **Tariffs.jsx** | `Tariffs` | `Tariff` | Компонент-контейнер для тарифов | `-` | `-` |
+
+**Взаимодействие компонентов:**
+- **SectionExpeditions** → управляет viewMode → рендерит **ToursList** или **ToursCard**
+- **ToursList** → использует **ButtonsActions** для кнопок бронирования
+- **ToursCard** → использует **MainButton** для кнопок бронирования  
+- **Tour** → использует **Tariffs** для отображения тарифов
+- **Tariffs** → использует **Tariff** для отдельных тарифов
