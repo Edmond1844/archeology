@@ -7,7 +7,7 @@
 
     border-radius: 10px;
 
-    background-color: #ffffff;
+    background-color: var(--white);
 
     margin-bottom: 30px;
     padding: 20px;
@@ -52,10 +52,10 @@
     width: 28px;
     height: 28px;
 
-    border: 1px solid #4997d3;
+    border: 1px solid var(--primary-blue);
     border-radius: 50%;
 
-    background-color: #4997d3;
+    background-color: var(--primary-blue);
 }
 
 @media (min-width: 886px) {

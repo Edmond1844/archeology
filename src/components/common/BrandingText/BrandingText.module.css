@@ -3,7 +3,7 @@
     font-weight: 700;
     font-size: 40px;
 
-    color: #fff;
+    color: var(--white);
 }
 
 .branding_subtitle {
@@ -15,5 +15,5 @@
 
     line-height: 14px;
 
-    color: #fff;
+    color: var(--white);
 }

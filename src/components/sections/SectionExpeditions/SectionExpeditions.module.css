@@ -13,7 +13,7 @@
 
     margin-bottom: 20px;
 
-    color: #222222;
+    color: var(--gray-dark);
 }
 
 .section_expeditions__list {
@@ -47,7 +47,7 @@
     font-weight: 400;
     font-size: 16px;
 
-    color: #999999;
+    color: var(--gray-medium);
 }
 
 .section_expeditions__tariff_text {
@@ -57,7 +57,7 @@
 
     margin-bottom: 10px;
 
-    color: #222222;
+    color: var(--gray-dark);
 
     opacity: 75%;
 }

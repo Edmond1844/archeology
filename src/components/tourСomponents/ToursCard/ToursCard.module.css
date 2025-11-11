@@ -9,7 +9,7 @@
     }
 
     .tours_card__item {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: var(--shadow-color);
         background-blend-mode: darken;
         
         width: 453px;
@@ -56,7 +56,7 @@
 
         line-height: 35px;
 
-        color: #ffffff;
+        color: var(--white);
     }
 
 
@@ -67,7 +67,7 @@
         font-weight: 400;
         font-size: 16px;
 
-        color: #ffffff;
+        color: var(--white);
     }
 
     .tours_card__buttons {

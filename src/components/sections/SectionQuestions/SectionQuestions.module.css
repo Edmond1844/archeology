@@ -1,6 +1,6 @@
 .section_questions {
     width: 100%;
-    background-color: rgba(246, 246, 246, 1);
+    background-color: var(--gray-lightest);
 }
 
 .section_questions__content {
@@ -24,7 +24,7 @@
 
     line-height: 20px;
 
-    color: #000;
+    color: var(--black);
 
     margin-bottom: 10px;
 }
@@ -39,7 +39,7 @@
     margin-bottom: 25px;
     margin-left: 5px;
 
-    color: rgb(53, 53, 53);
+    color: var(--gray-darker);
 }
 
 .section_questions__button_toggle {
@@ -47,7 +47,7 @@
     bottom: 10px;
     right: 20px;
 
-    color: #000;
+    color: var(--black);
 
     font-size: 14px;
 

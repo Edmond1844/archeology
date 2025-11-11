@@ -21,7 +21,7 @@
     font-weight: 400;
     font-size: 16px;
 
-    color: #000;
+    color: var(--black);
 
     margin-left: 10px;
 }
@@ -30,8 +30,8 @@
     border: none;
     border-radius: 10px;
 
-    color: #ffffff;
-    background-color: #cccccc;
+    color: var(--white);
+    background-color: var(--gray);
 
     padding: 10px 20px;
 }

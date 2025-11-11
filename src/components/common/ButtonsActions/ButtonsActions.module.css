@@ -11,19 +11,19 @@
 
     padding: 10px;
 
-    border: 1px solid #4997d3;
+    border: 1px solid var(--primary-blue);
     border-radius: 10px;
 
-    background-color: #ffffff;
-    color: #4997d3;
+    background-color: var(--white);
+    color: var(--primary-blue);
 
     line-height: 30px;
 }
 
 .details_button_column {
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid var(--white);
+    color: var(--white);
+    background-color: var(--white-transparent);
 }
 
 @media (min-width: 886px) {

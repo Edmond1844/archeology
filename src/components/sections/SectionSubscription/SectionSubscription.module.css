@@ -15,7 +15,7 @@
 
     line-height: 40px;
 
-    color: rgba(34, 34, 34, 1);
+    color: var(--gray-dark);
 }
 
 .section_subscription__text {
@@ -30,18 +30,18 @@
     margin-bottom: 20px;
     margin-left: 5px;
 
-    color: rgba(34, 34, 34, 1);
+    color: var(--gray-dark);
 }
 
 .section_subscription__input {
     line-height: 20px;
 
-    color: #999;
+    color: var(--gray-medium);
 
     padding: 5px;
     margin-bottom: 20px;
 
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--gray)
 }
 
 .section_subscription__input::placeholder {
@@ -49,7 +49,7 @@
     font-weight: 400;
     font-size: 16px;
 
-    color: #999;
+    color: var(--gray-medium);
     opacity: 1;
 }
 

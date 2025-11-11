@@ -103,10 +103,10 @@
         width: 158px;
         height: 48px;
 
-        background-color: #ffffff;
-        color: #433a3a;
+        background-color: var(--white);
+        color: var(--dark-brown);
 
-        border: 1px solid #dcd4d4;
+        border: 1px solid var(--light-gray);
         border-radius: 10px;
             
         margin-top: 20px;

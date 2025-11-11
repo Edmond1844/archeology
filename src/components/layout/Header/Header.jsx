@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 import styles from "./Header.module.css";
@@ -20,9 +21,12 @@ function Header() {
 	return (
 		<header className={styles.header}>
 			<div className={`${styles.header__wrapper_content} container`}>
-				<div className={`${styles.header__banner} via-antiqua-banner`}>
+				<Link
+					className={`${styles.header__banner} via-antiqua-banner`}
+					to="/"
+				>
 					<BrandingText />
-				</div>
+				</Link>
 				<nav className={styles.header__nav}>
 					<ul className={styles.header__nav_list}>
 						<li className={styles.header__nav_item}>

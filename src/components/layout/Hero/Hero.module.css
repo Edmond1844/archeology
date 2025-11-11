@@ -1,6 +1,6 @@
 .hero {
     background-image: url('../../../images/hero-mobile.jpg');
-    background-color: rgba(0, 0, 0, 0.29);
+    background-color: var(--shadow-color);
     background-blend-mode: overlay;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@
 @media (min-width: 886px) {
     .hero {
         background-image: url('../../../images/hero.png');
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: var(--shadow-color);
 
         height: 700px;
 

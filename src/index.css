@@ -45,6 +45,28 @@ button:disabled {
   cursor: auto;
 }
 
+:root {
+  /* Базовые цвета */
+  --white: #fff;
+  --black: #000;
+  --transparent: rgba(241, 0, 0, 0);
+  --primary-blue: #4997d3;
+  
+  /* Шкала серого */
+  --gray-lightest: rgb(246, 246, 246);
+  --light-gray: #dcd4d4;
+  --gray: #cccccc;
+  --gray-medium: #999999;
+  --gray-darker: #353535;
+  --gray-dark: #222222;
+  --dark-brown: #433a3a;
+  
+  /* Специальные цвета */
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --white-transparent: rgba(255, 255, 255, 0);
+  --footer-bg: rgba(34, 34, 34, 1);
+}
+
 .container {
   max-width: 320px;
 
@@ -60,7 +82,7 @@ button:disabled {
 
     Line-height: 100%;
 
-    color: #fff;
+    color: var(--white);
 }
 
 .input {
@@ -71,7 +93,7 @@ button:disabled {
     width: 100%;
 
     border: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid var(--shadow-color);
 }
 
 /* .size_navigation_button {
@@ -88,13 +110,7 @@ button:disabled {
   }
   
   .links-list {
-      font-family: "Poppins", sans-serif;
-      font-weight: 300;
       font-size: 16px;
-
-      Line-height: 100%;
-
-      color: #fff;
   }
 
   .input {
@@ -105,7 +121,7 @@ button:disabled {
       width: 256px;
 
       border: 0;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      border-bottom: 1px solid var(--shadow-color);
   }
 
 }
@@ -120,10 +136,6 @@ button:disabled {
 
 .via-antiqua-banner {
     width: 253px;
-}
-
-.via {
-    color: tomato;
 }
 
 .input:focus-visible {
