@@ -13,7 +13,18 @@ function ToursList({ tours }) {
 					id={tourItem.id}
 				>
 					<Link to={`/expeditions/${tourItem.slug}`}>
-						<img className={styles.tours__img} src={tourItem.img} />
+						<picture>
+							<source
+								srcSet={tourItem.img}
+								media="(min-width: 400px)"
+								width={"100%"}
+								height={300}
+							/>
+							<img
+								className={styles.tours__img}
+								src={tourItem.img}
+							/>
+						</picture>
 					</Link>
 					<div className={styles.tours__information}>
 						<p className={styles.tours__country}>
