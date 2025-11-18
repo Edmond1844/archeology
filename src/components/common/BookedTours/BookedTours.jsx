@@ -3,7 +3,7 @@ import MainButton from "../../common/MainButton/MainButton.jsx";
 
 import styles from "./BookedTours.module.css";
 
-function BookedTours() {
+function BookedTours({ toursItem }) {
 	const [isOpen, setIsOpen] = useState(false);
 
 	function toggleButton() {
@@ -27,7 +27,17 @@ function BookedTours() {
 				<h3 className={styles.сart_booked_tours__title}>
 					Забронированные туры
 				</h3>
-				<div className={styles.сart_booked_tours__list}></div>
+				<div className={styles.сart_booked_tours__list}>
+					{toursItem.map((item) => (
+						<div
+							className={styles.сart_booked_tours__item}
+							key={item.id}
+						>
+							<img src={item.img} alt={item.title} />
+							<h3>{item.title}</h3>
+						</div>
+					))}
+				</div>
 			</div>
 		</>
 	);

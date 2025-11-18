@@ -7,6 +7,7 @@
     
     width: 250px;
     min-height: 200px;
+    max-height: 300px;
 
     background: var(--white);
     box-shadow: 0 0 15px var(--transparent);
@@ -15,6 +16,9 @@
     transition: transform 0.2s;
 
     z-index: 10;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .cart_booked_tours__open {
@@ -34,9 +38,20 @@
     text-align: center;
 }
 
+.сart_booked_tours__list {
+    overflow-y: auto; 
+    padding: 10px;
+}
+
+.сart_booked_tours__item {
+    width: 100%;
+    min-height: 50px;
+}
+
 @media (min-width: 886px) {
     .сart_booked_tours {
         width: 500px;
         min-height: 500px;
+        height: 600px;
     }
 }

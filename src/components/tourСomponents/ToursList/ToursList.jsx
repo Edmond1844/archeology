@@ -3,62 +3,56 @@ import { Link } from "react-router-dom";
 import ButtonsActions from "../../common/ButtonsActions/ButtonsActions.jsx";
 
 import styles from "./ToursList.module.css";
-function ToursList({ tours }) {
+function ToursList({ filteredTours, onBook }) {
 	return (
 		<>
-			{tours.map((tourItem) => (
-				<div
-					className={styles.tour__item}
-					key={tourItem.id}
-					id={tourItem.id}
-				>
-					<Link to={`/expeditions/${tourItem.slug}`}>
-						<picture>
-							<source
-								srcSet={tourItem.img}
-								media="(min-width: 400px)"
-								width={"100%"}
-								height={300}
-							/>
-							<img
-								className={styles.tours__img}
-								src={tourItem.img}
-							/>
-						</picture>
+			<div className={styles.tour__item}>
+				<Link to={`/expeditions/${filteredTours.slug}`}>
+					<picture>
+						<source
+							srcSet={filteredTours.img}
+							media="(min-width: 400px)"
+							width={"100%"}
+							height={300}
+						/>
+						<img
+							className={styles.tours__img}
+							src={filteredTours.img}
+						/>
+					</picture>
+				</Link>
+				<div className={styles.tours__information}>
+					<p className={styles.tours__country}>
+						{filteredTours.country}
+					</p>
+					<Link
+						className={styles.tours__title}
+						to={`/expeditions/${filteredTours.slug}`}
+					>
+						{filteredTours.title}
 					</Link>
-					<div className={styles.tours__information}>
-						<p className={styles.tours__country}>
-							{tourItem.country}
-						</p>
-						<Link
-							className={styles.tours__title}
-							to={`/expeditions/${tourItem.slug}`}
-						>
-							{tourItem.title}
-						</Link>
-						<p className={styles.tours__description}>
-							{tourItem.description}
-						</p>
-					</div>
-					<div className={styles.tours__tariff_wrapper}>
-						<p className={styles.tours__tariff_text}>
-							{tourItem.durationDays} Дней
-						</p>
-						<p className={styles.tours__tariff_text}>
-							От ${tourItem.price}/ чел.
-						</p>
-						<div className={styles.tours__tariff_button_wrapper}>
-							<ButtonsActions
-								id={tourItem.id}
-								slug={tourItem.slug}
-								buttonType="button"
-							/>
-						</div>
+					<p className={styles.tours__description}>
+						{filteredTours.description}
+					</p>
+				</div>
+				<div className={styles.tours__tariff_wrapper}>
+					<p className={styles.tours__tariff_text}>
+						{filteredTours.durationDays} Дней
+					</p>
+					<p className={styles.tours__tariff_text}>
+						От ${filteredTours.price}/ чел.
+					</p>
+					<div className={styles.tours__tariff_button_wrapper}>
+						<ButtonsActions
+							id={filteredTours.id}
+							slug={filteredTours.slug}
+							buttonType="button"
+							onClick={() => onBook(filteredTours)}
+						/>
 					</div>
 				</div>
-			))}
+			</div>
 		</>
 	);
 }
-
 export default ToursList;

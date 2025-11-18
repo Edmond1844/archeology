@@ -31,6 +31,13 @@ function SectionExpeditions({ buttonList, tours }) {
 			setFilteredTours(filtered);
 		}
 	}
+
+	const [addedTours, setAddedTours] = useState([]);
+
+	function handleBook(tourItem) {
+		setAddedTours((currentTours) => [...currentTours, tourItem]);
+	}
+
 	return (
 		<section className={`${styles.section_expeditions} container`}>
 			<div className={styles.section_expeditions__header}>
@@ -78,12 +85,22 @@ function SectionExpeditions({ buttonList, tours }) {
 					</div>
 				</div>
 			</div>
-			{storeListView === "list" ? (
-				<ToursList tours={filteredTours} />
-			) : (
-				<ToursCard viewMode={storeListView} tours={filteredTours} />
-			)}
-			<BookedTours />
+			{storeListView === "list"
+				? filteredTours.map((filteredTour) => (
+						<ToursList
+							key={filteredTour.id}
+							filteredTours={filteredTour}
+							onBook={handleBook}
+						/>
+					))
+				: filteredTours.map((filteredTour) => (
+						<ToursCard
+							key={filteredTour.id}
+							viewMode={storeListView}
+							filteredTours={filteredTour}
+						/>
+					))}
+			<BookedTours toursItem={addedTours} />
 		</section>
 	);
 }
