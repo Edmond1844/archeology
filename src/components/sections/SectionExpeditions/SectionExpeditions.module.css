@@ -69,6 +69,12 @@
     margin-bottom: 20px;
 }
 
+.section_expeditions__tours_card_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
 @media (min-width: 886px) {
     .section_expeditions__tour_img {
         width: 358px;

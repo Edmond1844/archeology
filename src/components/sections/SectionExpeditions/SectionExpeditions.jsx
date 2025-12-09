@@ -32,10 +32,39 @@ function SectionExpeditions({ buttonList, tours }) {
 		}
 	}
 
-	const [addedTours, setAddedTours] = useState([]);
+	// Фильтрация через поиск
+	const [searchValue, setSearchValue] = useState("");
+
+	const searchTours = filteredTours.filter(
+		(item) =>
+			item.title.toLowerCase().includes(searchValue.toLowerCase()) ||
+			item.country.toLowerCase().includes(searchValue.toLowerCase()),
+	);
+
+	// Добавление в корзину и в localStorage
+
+	function handleSearch(event) {
+		setSearchValue(event.target.value);
+	}
+
+	const [addedTours, setAddedTours] = useState(
+		JSON.parse(localStorage.getItem("expeditions_tours") || "[]"),
+	);
 
 	function handleBook(tourItem) {
-		setAddedTours((currentTours) => [...currentTours, tourItem]);
+		const isAdded = addedTours.some((item) => item.id === tourItem.id);
+
+		if (isAdded) {
+			alert("Тур уже добавлен в корзину");
+			return currentTours;
+		}
+
+		setAddedTours((currentTour) => {
+			const newTours = [...currentTour, tourItem];
+			localStorage.setItem("expeditions_tours", JSON.stringify(newTours));
+
+			return newTours;
+		});
 	}
 
 	return (
@@ -72,6 +101,7 @@ function SectionExpeditions({ buttonList, tours }) {
 						className={`${styles.section_expeditions__input} input`}
 						type="text"
 						placeholder="Поиск"
+						onChange={handleSearch}
 					/>
 					<div>
 						<MainButton
@@ -85,21 +115,28 @@ function SectionExpeditions({ buttonList, tours }) {
 					</div>
 				</div>
 			</div>
-			{storeListView === "list"
-				? filteredTours.map((filteredTour) => (
+			{storeListView === "list" ? (
+				<ul>
+					{searchTours.map((filteredTour) => (
 						<ToursList
 							key={filteredTour.id}
 							filteredTours={filteredTour}
 							onBook={handleBook}
 						/>
-					))
-				: filteredTours.map((filteredTour) => (
+					))}
+				</ul>
+			) : (
+				<ul className={styles.section_expeditions__tours_card_wrapper}>
+					{searchTours.map((filteredTour) => (
 						<ToursCard
 							key={filteredTour.id}
 							viewMode={storeListView}
 							filteredTours={filteredTour}
+							onBook={handleBook}
 						/>
 					))}
+				</ul>
+			)}
 			<BookedTours toursItem={addedTours} />
 		</section>
 	);

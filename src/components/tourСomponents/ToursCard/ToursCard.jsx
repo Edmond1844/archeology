@@ -1,49 +1,44 @@
 import { Link } from "react-router-dom";
-import MainButton from "../../common/MainButton/MainButton";
+import ButtonsActions from "../../common/ButtonsActions/ButtonsActions";
 import styles from "./ToursCard.module.css";
 
-function ToursCard({ tours, viewMode }) {
+function ToursCard({ filteredTours, viewMode, onBook }) {
 	return (
 		<>
-			<ul className={styles.tours_card__list}>
-				{tours.map((tourItem) => (
-					<li
-						className={styles.tours_card__item}
-						key={tourItem.id}
-						style={{ backgroundImage: `url(${tourItem.img})` }}
+			<li
+				className={styles.tours_card__item}
+				key={filteredTours.id}
+				style={{ backgroundImage: `url(${filteredTours.img})` }}
+			>
+				<div className={styles.tours_card__wrapper}>
+					<Link
+						className={styles.tours_card__link}
+						to={`/expeditions/${filteredTours.slug}`}
 					>
-						<div className={styles.tours_card__wrapper}>
-							<Link
-								className={styles.tours_card__link}
-								to={`/expeditions/${tourItem.slug}`}
-							>
-								{" "}
-								<h2 className={styles.tours_card__title}>
-									{tourItem.title}
-								</h2>{" "}
-							</Link>
-							<div className={styles.tours_card__description}>
-								<p className={styles.tours_card__country}>
-									{tourItem.country}
-								</p>
-								<p className={styles.tours_card__price}>
-									От {tourItem.price} / чел
-								</p>
-							</div>
-							<div className={styles.tours_card__buttons}>
-								<MainButton
-									id={tourItem.id}
-									slug={tourItem.slug}
-									viewMode={viewMode}
-									buttonType="button"
-								>
-									Бронировать
-								</MainButton>
-							</div>
-						</div>
-					</li>
-				))}
-			</ul>
+						{" "}
+						<h2 className={styles.tours_card__title}>
+							{filteredTours.title}
+						</h2>{" "}
+					</Link>
+					<div className={styles.tours_card__description}>
+						<p className={styles.tours_card__country}>
+							{filteredTours.country}
+						</p>
+						<p className={styles.tours_card__price}>
+							От {filteredTours.price} / чел
+						</p>
+					</div>
+					<div className={styles.tours_card__buttons}>
+						<ButtonsActions
+							id={filteredTours.id}
+							slug={filteredTours.slug}
+							buttonType="button"
+							onClick={() => onBook(filteredTours)}
+							viewMode={viewMode}
+						/>
+					</div>
+				</div>
+			</li>
 		</>
 	);
 }

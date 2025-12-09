@@ -10,7 +10,7 @@
     max-height: 300px;
 
     background: var(--white);
-    box-shadow: 0 0 15px var(--transparent);
+    box-shadow: 0 0 15px var(--gray);
 
     transform: translateX(100%);
     transition: transform 0.2s;

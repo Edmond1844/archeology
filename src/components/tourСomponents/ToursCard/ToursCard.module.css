@@ -27,7 +27,7 @@
     .tours_card__wrapper {
         display: grid;
         grid-row-gap: 10px;
-        grid-template-columns: 459px;
+        /* grid-template-columns: 459px; */
         grid-template-rows: 70px 30px auto;
 
         padding: 22px 20px;

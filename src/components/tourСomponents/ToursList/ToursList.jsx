@@ -6,7 +6,7 @@ import styles from "./ToursList.module.css";
 function ToursList({ filteredTours, onBook }) {
 	return (
 		<>
-			<div className={styles.tour__item}>
+			<li className={styles.tour__item}>
 				<Link to={`/expeditions/${filteredTours.slug}`}>
 					<picture>
 						<source
@@ -51,7 +51,7 @@ function ToursList({ filteredTours, onBook }) {
 						/>
 					</div>
 				</div>
-			</div>
+			</li>
 		</>
 	);
 }
