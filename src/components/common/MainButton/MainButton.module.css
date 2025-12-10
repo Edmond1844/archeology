@@ -85,6 +85,16 @@
     width: 100%;
 }
 
+.main_button_clear {
+    border: none;
+
+    width: 100%;
+    
+    padding: 10px;
+
+    background-color: var(--color-remove);
+}
+
 
 @media (min-width: 886px) {
     /* Contacts */
@@ -133,6 +143,7 @@
         width: 200px;
     }
 }
+
 
 
 /* 

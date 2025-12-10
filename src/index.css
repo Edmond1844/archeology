@@ -65,6 +65,13 @@ button:disabled {
   --shadow-color: rgba(0, 0, 0, 0.2);
   --white-transparent: rgba(255, 255, 255, 0);
   --footer-bg: rgba(34, 34, 34, 1);
+
+  --color-remove: #f0e629;
+
+    /* Основные переменные шрифтов */
+  --font-primary: "Poppins", sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-bolder: 700;
 }
 
 .container {

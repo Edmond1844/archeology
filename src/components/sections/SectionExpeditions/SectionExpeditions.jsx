@@ -67,6 +67,21 @@ function SectionExpeditions({ buttonList, tours }) {
 		});
 	}
 
+	function handleRemoveTour(tourId) {
+		setAddedTours((currentTours) => {
+			const updatedTours = currentTours.filter(
+				(tour) => tour.id !== tourId,
+			);
+
+			localStorage.setItem(
+				"expeditions_tours",
+				JSON.stringify(updatedTours),
+			);
+
+			return updatedTours;
+		});
+	}
+
 	return (
 		<section className={`${styles.section_expeditions} container`}>
 			<div className={styles.section_expeditions__header}>
@@ -137,7 +152,10 @@ function SectionExpeditions({ buttonList, tours }) {
 					))}
 				</ul>
 			)}
-			<BookedTours toursItem={addedTours} />
+			<BookedTours
+				toursItem={addedTours}
+				onRemoveTour={handleRemoveTour}
+			/>
 		</section>
 	);
 }

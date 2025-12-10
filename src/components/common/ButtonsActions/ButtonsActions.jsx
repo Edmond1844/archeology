@@ -57,7 +57,7 @@ function ButtonsActions({ slug, id, buttonType, viewMode, onClick }) {
 				onClick={handleClick}
 				type={buttonType}
 			>
-				{isBooked ? "Убрать бронь" : "Бронировать"}
+				Бронировать
 			</MainButton>
 			<Link
 				to={`/expeditions/${slug}`}

@@ -16,7 +16,9 @@ function MainButton({ children, variant, ...props }) {
 								? styles.main_button_booked
 								: variant === "subscribeToggle"
 									? styles.main_button_subscription
-									: "";
+									: variant === "buttonClear"
+										? styles.main_button_clear
+										: "";
 
 	return (
 		<button className={`${buttonClass} button`} {...props} type="button">
